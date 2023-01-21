@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6823E1E6297C1B8200E9D7E0 /* Blinders_Chess_AssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E1E5297C1B8200E9D7E0 /* Blinders_Chess_AssistantApp.swift */; };
+		6823E1E8297C1B8200E9D7E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E1E7297C1B8200E9D7E0 /* ContentView.swift */; };
+		6823E1EA297C1B8400E9D7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6823E1E9297C1B8400E9D7E0 /* Assets.xcassets */; };
+		6823E1ED297C1B8400E9D7E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6823E1EC297C1B8400E9D7E0 /* Preview Assets.xcassets */; };
+		6823E1F7297C1B8400E9D7E0 /* Blinders_Chess_AssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E1F6297C1B8400E9D7E0 /* Blinders_Chess_AssistantTests.swift */; };
+		6823E201297C1B8400E9D7E0 /* Blinders_Chess_AssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E200297C1B8400E9D7E0 /* Blinders_Chess_AssistantUITests.swift */; };
+		6823E203297C1B8400E9D7E0 /* Blinders_Chess_AssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E202297C1B8400E9D7E0 /* Blinders_Chess_AssistantUITestsLaunchTests.swift */; };
+		6823E214297C253A00E9D7E0 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E213297C253A00E9D7E0 /* CircleImage.swift */; };
+		6823E216297C270000E9D7E0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E215297C270000E9D7E0 /* HeaderView.swift */; };
+		6823E218297C276300E9D7E0 /* RectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E217297C276300E9D7E0 /* RectangleView.swift */; };
+		6823E21A297C29DD00E9D7E0 /* RulesCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E219297C29DD00E9D7E0 /* RulesCircleImage.swift */; };
+		6823E21C297C2C4E00E9D7E0 /* RulesChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E21B297C2C4E00E9D7E0 /* RulesChoice.swift */; };
+		6823E21E297C30F800E9D7E0 /* CirclePlacementImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E21D297C30F800E9D7E0 /* CirclePlacementImage.swift */; };
+		6823E220297C354500E9D7E0 /* PlacementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E21F297C354500E9D7E0 /* PlacementView.swift */; };
+		6823E222297C360900E9D7E0 /* ChessBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E221297C360900E9D7E0 /* ChessBack.swift */; };
+		6823E226297C39D300E9D7E0 /* CirclePlacementImageBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E225297C39D300E9D7E0 /* CirclePlacementImageBig.swift */; };
+		6823E228297C3EEA00E9D7E0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E227297C3EEA00E9D7E0 /* GradientView.swift */; };
+		6823E22A297C478600E9D7E0 /* CircleImageMouvement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E229297C478600E9D7E0 /* CircleImageMouvement.swift */; };
+		6823E22C297C47D200E9D7E0 /* CircleImageMouvementBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E22B297C47D200E9D7E0 /* CircleImageMouvementBig.swift */; };
+		6823E22E297C482400E9D7E0 /* MouvementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E22D297C482400E9D7E0 /* MouvementView.swift */; };
+		6823E230297C499700E9D7E0 /* CircleRobotImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E22F297C499700E9D7E0 /* CircleRobotImage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6823E1F3297C1B8400E9D7E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6823E1DA297C1B8200E9D7E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6823E1E1297C1B8200E9D7E0;
+			remoteInfo = "Blinders Chess Assistant";
+		};
+		6823E1FD297C1B8400E9D7E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6823E1DA297C1B8200E9D7E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6823E1E1297C1B8200E9D7E0;
+			remoteInfo = "Blinders Chess Assistant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6823E1E2297C1B8200E9D7E0 /* Blinders Chess Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blinders Chess Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6823E1E5297C1B8200E9D7E0 /* Blinders_Chess_AssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blinders_Chess_AssistantApp.swift; sourceTree = "<group>"; };
+		6823E1E7297C1B8200E9D7E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6823E1E9297C1B8400E9D7E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6823E1EC297C1B8400E9D7E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6823E1F2297C1B8400E9D7E0 /* Blinders Chess AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blinders Chess AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6823E1F6297C1B8400E9D7E0 /* Blinders_Chess_AssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blinders_Chess_AssistantTests.swift; sourceTree = "<group>"; };
+		6823E1FC297C1B8400E9D7E0 /* Blinders Chess AssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blinders Chess AssistantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6823E200297C1B8400E9D7E0 /* Blinders_Chess_AssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blinders_Chess_AssistantUITests.swift; sourceTree = "<group>"; };
+		6823E202297C1B8400E9D7E0 /* Blinders_Chess_AssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blinders_Chess_AssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6823E213297C253A00E9D7E0 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		6823E215297C270000E9D7E0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		6823E217297C276300E9D7E0 /* RectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleView.swift; sourceTree = "<group>"; };
+		6823E219297C29DD00E9D7E0 /* RulesCircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesCircleImage.swift; sourceTree = "<group>"; };
+		6823E21B297C2C4E00E9D7E0 /* RulesChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesChoice.swift; sourceTree = "<group>"; };
+		6823E21D297C30F800E9D7E0 /* CirclePlacementImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePlacementImage.swift; sourceTree = "<group>"; };
+		6823E21F297C354500E9D7E0 /* PlacementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementView.swift; sourceTree = "<group>"; };
+		6823E221297C360900E9D7E0 /* ChessBack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessBack.swift; sourceTree = "<group>"; };
+		6823E225297C39D300E9D7E0 /* CirclePlacementImageBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePlacementImageBig.swift; sourceTree = "<group>"; };
+		6823E227297C3EEA00E9D7E0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		6823E229297C478600E9D7E0 /* CircleImageMouvement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageMouvement.swift; sourceTree = "<group>"; };
+		6823E22B297C47D200E9D7E0 /* CircleImageMouvementBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageMouvementBig.swift; sourceTree = "<group>"; };
+		6823E22D297C482400E9D7E0 /* MouvementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouvementView.swift; sourceTree = "<group>"; };
+		6823E22F297C499700E9D7E0 /* CircleRobotImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleRobotImage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6823E1DF297C1B8200E9D7E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6823E1EF297C1B8400E9D7E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6823E1F9297C1B8400E9D7E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6823E1D9297C1B8200E9D7E0 = {
+			isa = PBXGroup;
+			children = (
+				6823E1E4297C1B8200E9D7E0 /* Blinders Chess Assistant */,
+				6823E1F5297C1B8400E9D7E0 /* Blinders Chess AssistantTests */,
+				6823E1FF297C1B8400E9D7E0 /* Blinders Chess AssistantUITests */,
+				6823E1E3297C1B8200E9D7E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6823E1E3297C1B8200E9D7E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6823E1E2297C1B8200E9D7E0 /* Blinders Chess Assistant.app */,
+				6823E1F2297C1B8400E9D7E0 /* Blinders Chess AssistantTests.xctest */,
+				6823E1FC297C1B8400E9D7E0 /* Blinders Chess AssistantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6823E1E4297C1B8200E9D7E0 /* Blinders Chess Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				6823E224297C399000E9D7E0 /* ViewAssets */,
+				6823E1E5297C1B8200E9D7E0 /* Blinders_Chess_AssistantApp.swift */,
+				6823E1E7297C1B8200E9D7E0 /* ContentView.swift */,
+				6823E223297C395600E9D7E0 /* Views */,
+				6823E1E9297C1B8400E9D7E0 /* Assets.xcassets */,
+				6823E1EB297C1B8400E9D7E0 /* Preview Content */,
+			);
+			path = "Blinders Chess Assistant";
+			sourceTree = "<group>";
+		};
+		6823E1EB297C1B8400E9D7E0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6823E1EC297C1B8400E9D7E0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6823E1F5297C1B8400E9D7E0 /* Blinders Chess AssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				6823E1F6297C1B8400E9D7E0 /* Blinders_Chess_AssistantTests.swift */,
+			);
+			path = "Blinders Chess AssistantTests";
+			sourceTree = "<group>";
+		};
+		6823E1FF297C1B8400E9D7E0 /* Blinders Chess AssistantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6823E200297C1B8400E9D7E0 /* Blinders_Chess_AssistantUITests.swift */,
+				6823E202297C1B8400E9D7E0 /* Blinders_Chess_AssistantUITestsLaunchTests.swift */,
+			);
+			path = "Blinders Chess AssistantUITests";
+			sourceTree = "<group>";
+		};
+		6823E223297C395600E9D7E0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6823E21B297C2C4E00E9D7E0 /* RulesChoice.swift */,
+				6823E21F297C354500E9D7E0 /* PlacementView.swift */,
+				6823E22D297C482400E9D7E0 /* MouvementView.swift */,
+				6823E217297C276300E9D7E0 /* RectangleView.swift */,
+				6823E215297C270000E9D7E0 /* HeaderView.swift */,
+				6823E227297C3EEA00E9D7E0 /* GradientView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6823E224297C399000E9D7E0 /* ViewAssets */ = {
+			isa = PBXGroup;
+			children = (
+				6823E221297C360900E9D7E0 /* ChessBack.swift */,
+				6823E213297C253A00E9D7E0 /* CircleImage.swift */,
+				6823E229297C478600E9D7E0 /* CircleImageMouvement.swift */,
+				6823E22B297C47D200E9D7E0 /* CircleImageMouvementBig.swift */,
+				6823E22F297C499700E9D7E0 /* CircleRobotImage.swift */,
+				6823E225297C39D300E9D7E0 /* CirclePlacementImageBig.swift */,
+				6823E21D297C30F800E9D7E0 /* CirclePlacementImage.swift */,
+				6823E219297C29DD00E9D7E0 /* RulesCircleImage.swift */,
+			);
+			path = ViewAssets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6823E1E1297C1B8200E9D7E0 /* Blinders Chess Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6823E206297C1B8400E9D7E0 /* Build configuration list for PBXNativeTarget "Blinders Chess Assistant" */;
+			buildPhases = (
+				6823E1DE297C1B8200E9D7E0 /* Sources */,
+				6823E1DF297C1B8200E9D7E0 /* Frameworks */,
+				6823E1E0297C1B8200E9D7E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Blinders Chess Assistant";
+			productName = "Blinders Chess Assistant";
+			productReference = 6823E1E2297C1B8200E9D7E0 /* Blinders Chess Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6823E1F1297C1B8400E9D7E0 /* Blinders Chess AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6823E209297C1B8400E9D7E0 /* Build configuration list for PBXNativeTarget "Blinders Chess AssistantTests" */;
+			buildPhases = (
+				6823E1EE297C1B8400E9D7E0 /* Sources */,
+				6823E1EF297C1B8400E9D7E0 /* Frameworks */,
+				6823E1F0297C1B8400E9D7E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6823E1F4297C1B8400E9D7E0 /* PBXTargetDependency */,
+			);
+			name = "Blinders Chess AssistantTests";
+			productName = "Blinders Chess AssistantTests";
+			productReference = 6823E1F2297C1B8400E9D7E0 /* Blinders Chess AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6823E1FB297C1B8400E9D7E0 /* Blinders Chess AssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6823E20C297C1B8400E9D7E0 /* Build configuration list for PBXNativeTarget "Blinders Chess AssistantUITests" */;
+			buildPhases = (
+				6823E1F8297C1B8400E9D7E0 /* Sources */,
+				6823E1F9297C1B8400E9D7E0 /* Frameworks */,
+				6823E1FA297C1B8400E9D7E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6823E1FE297C1B8400E9D7E0 /* PBXTargetDependency */,
+			);
+			name = "Blinders Chess AssistantUITests";
+			productName = "Blinders Chess AssistantUITests";
+			productReference = 6823E1FC297C1B8400E9D7E0 /* Blinders Chess AssistantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6823E1DA297C1B8200E9D7E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6823E1E1297C1B8200E9D7E0 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					6823E1F1297C1B8400E9D7E0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6823E1E1297C1B8200E9D7E0;
+					};
+					6823E1FB297C1B8400E9D7E0 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 6823E1E1297C1B8200E9D7E0;
+					};
+				};
+			};
+			buildConfigurationList = 6823E1DD297C1B8200E9D7E0 /* Build configuration list for PBXProject "Blinders Chess Assistant" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6823E1D9297C1B8200E9D7E0;
+			productRefGroup = 6823E1E3297C1B8200E9D7E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6823E1E1297C1B8200E9D7E0 /* Blinders Chess Assistant */,
+				6823E1F1297C1B8400E9D7E0 /* Blinders Chess AssistantTests */,
+				6823E1FB297C1B8400E9D7E0 /* Blinders Chess AssistantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6823E1E0297C1B8200E9D7E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6823E1ED297C1B8400E9D7E0 /* Preview Assets.xcassets in Resources */,
+				6823E1EA297C1B8400E9D7E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6823E1F0297C1B8400E9D7E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6823E1FA297C1B8400E9D7E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6823E1DE297C1B8200E9D7E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6823E216297C270000E9D7E0 /* HeaderView.swift in Sources */,
+				6823E222297C360900E9D7E0 /* ChessBack.swift in Sources */,
+				6823E228297C3EEA00E9D7E0 /* GradientView.swift in Sources */,
+				6823E214297C253A00E9D7E0 /* CircleImage.swift in Sources */,
+				6823E220297C354500E9D7E0 /* PlacementView.swift in Sources */,
+				6823E1E8297C1B8200E9D7E0 /* ContentView.swift in Sources */,
+				6823E21E297C30F800E9D7E0 /* CirclePlacementImage.swift in Sources */,
+				6823E1E6297C1B8200E9D7E0 /* Blinders_Chess_AssistantApp.swift in Sources */,
+				6823E22E297C482400E9D7E0 /* MouvementView.swift in Sources */,
+				6823E218297C276300E9D7E0 /* RectangleView.swift in Sources */,
+				6823E21A297C29DD00E9D7E0 /* RulesCircleImage.swift in Sources */,
+				6823E22A297C478600E9D7E0 /* CircleImageMouvement.swift in Sources */,
+				6823E230297C499700E9D7E0 /* CircleRobotImage.swift in Sources */,
+				6823E22C297C47D200E9D7E0 /* CircleImageMouvementBig.swift in Sources */,
+				6823E21C297C2C4E00E9D7E0 /* RulesChoice.swift in Sources */,
+				6823E226297C39D300E9D7E0 /* CirclePlacementImageBig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6823E1EE297C1B8400E9D7E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6823E1F7297C1B8400E9D7E0 /* Blinders_Chess_AssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6823E1F8297C1B8400E9D7E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6823E201297C1B8400E9D7E0 /* Blinders_Chess_AssistantUITests.swift in Sources */,
+				6823E203297C1B8400E9D7E0 /* Blinders_Chess_AssistantUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6823E1F4297C1B8400E9D7E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6823E1E1297C1B8200E9D7E0 /* Blinders Chess Assistant */;
+			targetProxy = 6823E1F3297C1B8400E9D7E0 /* PBXContainerItemProxy */;
+		};
+		6823E1FE297C1B8400E9D7E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6823E1E1297C1B8200E9D7E0 /* Blinders Chess Assistant */;
+			targetProxy = 6823E1FD297C1B8400E9D7E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6823E204297C1B8400E9D7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6823E205297C1B8400E9D7E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6823E207297C1B8400E9D7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Blinders Chess Assistant/Preview Content\"";
+				DEVELOPMENT_TEAM = GY78W25HR8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Blinders-Chess-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6823E208297C1B8400E9D7E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Blinders Chess Assistant/Preview Content\"";
+				DEVELOPMENT_TEAM = GY78W25HR8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Blinders-Chess-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6823E20A297C1B8400E9D7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GY78W25HR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Blinders-Chess-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blinders Chess Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Blinders Chess Assistant";
+			};
+			name = Debug;
+		};
+		6823E20B297C1B8400E9D7E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GY78W25HR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Blinders-Chess-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Blinders Chess Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Blinders Chess Assistant";
+			};
+			name = Release;
+		};
+		6823E20D297C1B8400E9D7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GY78W25HR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Blinders-Chess-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Blinders Chess Assistant";
+			};
+			name = Debug;
+		};
+		6823E20E297C1B8400E9D7E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GY78W25HR8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Personal.Blinders-Chess-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Blinders Chess Assistant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6823E1DD297C1B8200E9D7E0 /* Build configuration list for PBXProject "Blinders Chess Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6823E204297C1B8400E9D7E0 /* Debug */,
+				6823E205297C1B8400E9D7E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6823E206297C1B8400E9D7E0 /* Build configuration list for PBXNativeTarget "Blinders Chess Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6823E207297C1B8400E9D7E0 /* Debug */,
+				6823E208297C1B8400E9D7E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6823E209297C1B8400E9D7E0 /* Build configuration list for PBXNativeTarget "Blinders Chess AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6823E20A297C1B8400E9D7E0 /* Debug */,
+				6823E20B297C1B8400E9D7E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6823E20C297C1B8400E9D7E0 /* Build configuration list for PBXNativeTarget "Blinders Chess AssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6823E20D297C1B8400E9D7E0 /* Debug */,
+				6823E20E297C1B8400E9D7E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6823E1DA297C1B8200E9D7E0 /* Project object */;
+}
