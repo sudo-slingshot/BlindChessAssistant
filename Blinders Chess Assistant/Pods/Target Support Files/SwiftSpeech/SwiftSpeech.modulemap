@@ -1,0 +1,6 @@
+framework module SwiftSpeech {
+  umbrella header "SwiftSpeech-umbrella.h"
+
+  export *
+  module * { export * }
+}

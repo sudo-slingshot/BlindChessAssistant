@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Blinders_Chess_Assistant_Blinders_Chess_AssistantUITests : NSObject
+@end
+@implementation PodsDummy_Pods_Blinders_Chess_Assistant_Blinders_Chess_AssistantUITests
+@end

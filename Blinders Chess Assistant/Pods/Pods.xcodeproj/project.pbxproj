@@ -1,0 +1,1002 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0356D3C88B2FB13591BD94B0134D7625 /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E43D4A7F523A1354811E7A110B0A0E4 /* SpeechRecognizer.swift */; };
+		128438975A5C9B631117C0EE05245B91 /* SwiftSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3467D3D9CAD28258EE8E46A954609D88 /* SwiftSpeech.swift */; };
+		14F09ADD111A1C8E8BC178197CE8FA26 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21C96EDF13626B59749141416CDC20C /* Session.swift */; };
+		17056265A37F5C6B0AEFB1B99667DA12 /* Demos.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA90607C632A303F909AAD0E8E878435 /* Demos.swift */; };
+		2ADAF3204F138C1381254B1D65C03FFC /* Authorization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244DE2B15972D1AD773BA33C4AFFDBCA /* Authorization.swift */; };
+		3195D3FDB62FADA0F032EA8ACADD809C /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A0B0D7473F6DBA2C3E58A6E61550B8 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3574D97CDED9541149D6BAF9DE838556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4D7BC40A377E790EC65C72B1BA63E6A0 /* Environments.swift in Sources */ = {isa = PBXBuildFile; fileRef = A639D49EB9CF30BABC3FCD473935EFAF /* Environments.swift */; };
+		52438C58672D9477E9E9C2682CA4596D /* Pods-Blinders Chess Assistant-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 423BFCCDC54203F5CB38B9C4971C3E5A /* Pods-Blinders Chess Assistant-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54B9412D2E3D4EF731E596826D86CEC4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5F9A6570A1C6A74B40A008AF5A7706C1 /* SwiftSpeech-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 66A3E869AA3E9250D62C5AFB70EA80D3 /* SwiftSpeech-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		626111584FB63C5158357AFD30E75670 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22231D34DB2DAAE1820B792AC25AA9E0 /* Extensions.swift */; };
+		78352B52EB5D936DA35F7B2DD93C71F9 /* SwiftSpeech-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E8198F67CF9AECE5EB5B2958389B513 /* SwiftSpeech-dummy.m */; };
+		8BC9C62BC9999D8000E176D84123C00A /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2ECA813A0C1FCFE9BC0DBD86760DB1 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-dummy.m */; };
+		8F630DF1158966CDDFE2825BB8D83FCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8FBF676D58B0F58FC8295554C76D1C27 /* Pods-Blinders Chess AssistantTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9644E3D9537C62CA2AD5B1F2E9C12460 /* Pods-Blinders Chess AssistantTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA78B794FF79131ECEAFDC694DABB448 /* Pods-Blinders Chess Assistant-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F084EB3683E55654A59E27AB555BC66E /* Pods-Blinders Chess Assistant-dummy.m */; };
+		AAD685FCBEA17E2DE6F2062A03EC10A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B5CDB152ED01885EA022989261106F09 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00902796F57B28BF133B4ECE010736E8 /* RecordButton.swift */; };
+		C0BD2E13C90F3AABB7FB66657DE53D44 /* Pods-Blinders Chess AssistantTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33ED9EE9F1805EAAAD97FEDA966DFED9 /* Pods-Blinders Chess AssistantTests-dummy.m */; };
+		CC9262DBB1DFF8AFBB9A0B8F77983CE4 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B683F79E6DF4EF2009D3CF1E2722523 /* ViewModifiers.swift */; };
+		F58BCBAC53B683327430AE4640327F9C /* LibraryContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EB01D78EB7A323389CFF17172B3421 /* LibraryContent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5411A2220D3951A906E2B0EEC2F8D9F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDB55A62C2FE97573139439F98C80C69;
+			remoteInfo = "Pods-Blinders Chess Assistant";
+		};
+		B5ADCFC8C1DE5ED773774A6EFC0FFA01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1DEA05FFE9644EBE3FB3B34A9F6D363;
+			remoteInfo = SwiftSpeech;
+		};
+		D532F8FE611F69331A33B4D7B3D8F8B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1DEA05FFE9644EBE3FB3B34A9F6D363;
+			remoteInfo = SwiftSpeech;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00902796F57B28BF133B4ECE010736E8 /* RecordButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordButton.swift; path = Sources/SwiftSpeech/RecordButton.swift; sourceTree = "<group>"; };
+		06CAF92A4EC71CBA7F1166A7174DECB2 /* Pods-Blinders Chess AssistantTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Blinders Chess AssistantTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D08BDAF47DE0D5E4B2BE71827BBE3A9 /* Pods-Blinders Chess Assistant-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Blinders Chess Assistant-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0DBCCEB5729B0AC6447DFE7ED6C847C1 /* SwiftSpeech.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSpeech.modulemap; sourceTree = "<group>"; };
+		116B86EA7BAC948E215BCFC9A9439A1F /* Pods-Blinders Chess Assistant-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Blinders Chess Assistant-Info.plist"; sourceTree = "<group>"; };
+		144D671CB6B006110BB9AA63DB4AF481 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests"; path = Pods_Blinders_Chess_Assistant_Blinders_Chess_AssistantUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA3630F77D94373EFD97F64743139F0 /* Pods-Blinders Chess AssistantTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Blinders Chess AssistantTests"; path = Pods_Blinders_Chess_AssistantTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E41329A39FA68FEC0200E64EFC6CB5D /* SwiftSpeech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpeech.debug.xcconfig; sourceTree = "<group>"; };
+		1F2DE8AD2A9ACA1D15018B9BF65EC049 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		22231D34DB2DAAE1820B792AC25AA9E0 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Sources/SwiftSpeech/Extensions.swift; sourceTree = "<group>"; };
+		244DE2B15972D1AD773BA33C4AFFDBCA /* Authorization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Authorization.swift; path = Sources/SwiftSpeech/Authorization.swift; sourceTree = "<group>"; };
+		3325104CE82B5CA54B69FCE74EA76612 /* Pods-Blinders Chess Assistant.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Blinders Chess Assistant.modulemap"; sourceTree = "<group>"; };
+		33D2EE949CD450B3ABCA15EFC319B79D /* SwiftSpeech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSpeech.release.xcconfig; sourceTree = "<group>"; };
+		33ED9EE9F1805EAAAD97FEDA966DFED9 /* Pods-Blinders Chess AssistantTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Blinders Chess AssistantTests-dummy.m"; sourceTree = "<group>"; };
+		3467D3D9CAD28258EE8E46A954609D88 /* SwiftSpeech.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSpeech.swift; path = Sources/SwiftSpeech/SwiftSpeech.swift; sourceTree = "<group>"; };
+		3E0E9FECDC3A44B7A0836E4513FE3CDC /* Pods-Blinders Chess Assistant */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Blinders Chess Assistant"; path = Pods_Blinders_Chess_Assistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		423BFCCDC54203F5CB38B9C4971C3E5A /* Pods-Blinders Chess Assistant-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Blinders Chess Assistant-umbrella.h"; sourceTree = "<group>"; };
+		46EB01D78EB7A323389CFF17172B3421 /* LibraryContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LibraryContent.swift; path = Sources/SwiftSpeech/LibraryContent.swift; sourceTree = "<group>"; };
+		47741ADE937D61A88FDDC8F3FE9639D1 /* Pods-Blinders Chess Assistant-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Blinders Chess Assistant-acknowledgements.plist"; sourceTree = "<group>"; };
+		499E8F153FACC3D465423D25D8B19DEB /* Pods-Blinders Chess Assistant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blinders Chess Assistant.debug.xcconfig"; sourceTree = "<group>"; };
+		658ACD130B609AE8B5E4D8A8CD2CA8B5 /* Pods-Blinders Chess AssistantTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blinders Chess AssistantTests.debug.xcconfig"; sourceTree = "<group>"; };
+		65A0B0D7473F6DBA2C3E58A6E61550B8 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-umbrella.h"; sourceTree = "<group>"; };
+		66A3E869AA3E9250D62C5AFB70EA80D3 /* SwiftSpeech-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpeech-umbrella.h"; sourceTree = "<group>"; };
+		6A7E3191D9F796E31E23DCFB671E0C05 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6B683F79E6DF4EF2009D3CF1E2722523 /* ViewModifiers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewModifiers.swift; path = Sources/SwiftSpeech/ViewModifiers.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7374EC9FFB0D7DCE12CC160C87C8199D /* SwiftSpeech-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSpeech-Info.plist"; sourceTree = "<group>"; };
+		75619206A921E87CC6AD3E87BE40507E /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7E43D4A7F523A1354811E7A110B0A0E4 /* SpeechRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechRecognizer.swift; path = Sources/SwiftSpeech/SpeechRecognizer.swift; sourceTree = "<group>"; };
+		8E8198F67CF9AECE5EB5B2958389B513 /* SwiftSpeech-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSpeech-dummy.m"; sourceTree = "<group>"; };
+		9644E3D9537C62CA2AD5B1F2E9C12460 /* Pods-Blinders Chess AssistantTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Blinders Chess AssistantTests-umbrella.h"; sourceTree = "<group>"; };
+		974311B99DEF130F158E82C5D8B0C1C5 /* Pods-Blinders Chess AssistantTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Blinders Chess AssistantTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A440D1945F4DF86A649BECF4ADA66369 /* SwiftSpeech-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSpeech-prefix.pch"; sourceTree = "<group>"; };
+		A4AE21020868934F69F1591B6FC3BE47 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-frameworks.sh"; sourceTree = "<group>"; };
+		A639D49EB9CF30BABC3FCD473935EFAF /* Environments.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Environments.swift; path = Sources/SwiftSpeech/Environments.swift; sourceTree = "<group>"; };
+		B07F1E8CB3AE4FCFBB062FADF916C191 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.modulemap"; sourceTree = "<group>"; };
+		B21C96EDF13626B59749141416CDC20C /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Sources/SwiftSpeech/Session.swift; sourceTree = "<group>"; };
+		BBE9D5CF61140C1C8C55E01179857391 /* Pods-Blinders Chess Assistant-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Blinders Chess Assistant-frameworks.sh"; sourceTree = "<group>"; };
+		BEE6A98B72DCE39B1A66A2D2003D5CDF /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA90607C632A303F909AAD0E8E878435 /* Demos.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Demos.swift; path = Sources/SwiftSpeech/Demos.swift; sourceTree = "<group>"; };
+		CBF02C0CB2A8275CE983390E549DF9B7 /* Pods-Blinders Chess AssistantTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blinders Chess AssistantTests.release.xcconfig"; sourceTree = "<group>"; };
+		CCD35A32EB920624D9ED27BD2C08627B /* Pods-Blinders Chess Assistant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Blinders Chess Assistant.release.xcconfig"; sourceTree = "<group>"; };
+		DD2ECA813A0C1FCFE9BC0DBD86760DB1 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-dummy.m"; sourceTree = "<group>"; };
+		EE80E34875298D59E4253099ABB33F05 /* Pods-Blinders Chess AssistantTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Blinders Chess AssistantTests.modulemap"; sourceTree = "<group>"; };
+		F084EB3683E55654A59E27AB555BC66E /* Pods-Blinders Chess Assistant-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Blinders Chess Assistant-dummy.m"; sourceTree = "<group>"; };
+		F47351358F947516FEC300C5C245CDD8 /* SwiftSpeech */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftSpeech; path = SwiftSpeech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACBFAB1D784F1FDC3759C443A1DB107 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-Info.plist"; sourceTree = "<group>"; };
+		FF013D95662F5BDEB07218A295FAEB5F /* Pods-Blinders Chess AssistantTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Blinders Chess AssistantTests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B59AD54EDF0671FAD0940C633C6E406 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54B9412D2E3D4EF731E596826D86CEC4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A46A8AAA6F6BADFCEA186FD4FA291A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F630DF1158966CDDFE2825BB8D83FCD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		636E27B83A49342B5F1BC06075495887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD685FCBEA17E2DE6F2062A03EC10A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A31D5D36348DB7F99759CA3C3255FCCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3574D97CDED9541149D6BAF9DE838556 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		172991084F0ECD124A76FE5112269DC7 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B07F1E8CB3AE4FCFBB062FADF916C191 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.modulemap */,
+				75619206A921E87CC6AD3E87BE40507E /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-acknowledgements.markdown */,
+				6A7E3191D9F796E31E23DCFB671E0C05 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-acknowledgements.plist */,
+				DD2ECA813A0C1FCFE9BC0DBD86760DB1 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-dummy.m */,
+				A4AE21020868934F69F1591B6FC3BE47 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-frameworks.sh */,
+				FACBFAB1D784F1FDC3759C443A1DB107 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-Info.plist */,
+				65A0B0D7473F6DBA2C3E58A6E61550B8 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-umbrella.h */,
+				1F2DE8AD2A9ACA1D15018B9BF65EC049 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.debug.xcconfig */,
+				BEE6A98B72DCE39B1A66A2D2003D5CDF /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.release.xcconfig */,
+			);
+			name = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests";
+			path = "Target Support Files/Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests";
+			sourceTree = "<group>";
+		};
+		3B13969E92F654E871E4950953D59B82 /* Pods-Blinders Chess AssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE80E34875298D59E4253099ABB33F05 /* Pods-Blinders Chess AssistantTests.modulemap */,
+				06CAF92A4EC71CBA7F1166A7174DECB2 /* Pods-Blinders Chess AssistantTests-acknowledgements.markdown */,
+				974311B99DEF130F158E82C5D8B0C1C5 /* Pods-Blinders Chess AssistantTests-acknowledgements.plist */,
+				33ED9EE9F1805EAAAD97FEDA966DFED9 /* Pods-Blinders Chess AssistantTests-dummy.m */,
+				FF013D95662F5BDEB07218A295FAEB5F /* Pods-Blinders Chess AssistantTests-Info.plist */,
+				9644E3D9537C62CA2AD5B1F2E9C12460 /* Pods-Blinders Chess AssistantTests-umbrella.h */,
+				658ACD130B609AE8B5E4D8A8CD2CA8B5 /* Pods-Blinders Chess AssistantTests.debug.xcconfig */,
+				CBF02C0CB2A8275CE983390E549DF9B7 /* Pods-Blinders Chess AssistantTests.release.xcconfig */,
+			);
+			name = "Pods-Blinders Chess AssistantTests";
+			path = "Target Support Files/Pods-Blinders Chess AssistantTests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5E7B3CAFDB8CA4979C6EA42500F8474E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				81C87706356180C217A7C23F4D82653A /* Pods-Blinders Chess Assistant */,
+				172991084F0ECD124A76FE5112269DC7 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests */,
+				3B13969E92F654E871E4950953D59B82 /* Pods-Blinders Chess AssistantTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		625A7F836428DBA715B581D16935520C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0DBCCEB5729B0AC6447DFE7ED6C847C1 /* SwiftSpeech.modulemap */,
+				8E8198F67CF9AECE5EB5B2958389B513 /* SwiftSpeech-dummy.m */,
+				7374EC9FFB0D7DCE12CC160C87C8199D /* SwiftSpeech-Info.plist */,
+				A440D1945F4DF86A649BECF4ADA66369 /* SwiftSpeech-prefix.pch */,
+				66A3E869AA3E9250D62C5AFB70EA80D3 /* SwiftSpeech-umbrella.h */,
+				1E41329A39FA68FEC0200E64EFC6CB5D /* SwiftSpeech.debug.xcconfig */,
+				33D2EE949CD450B3ABCA15EFC319B79D /* SwiftSpeech.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSpeech";
+			sourceTree = "<group>";
+		};
+		62FCAF13ACC6B3302A73138B5B9F1FF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E0E9FECDC3A44B7A0836E4513FE3CDC /* Pods-Blinders Chess Assistant */,
+				144D671CB6B006110BB9AA63DB4AF481 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests */,
+				1AA3630F77D94373EFD97F64743139F0 /* Pods-Blinders Chess AssistantTests */,
+				F47351358F947516FEC300C5C245CDD8 /* SwiftSpeech */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81C87706356180C217A7C23F4D82653A /* Pods-Blinders Chess Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				3325104CE82B5CA54B69FCE74EA76612 /* Pods-Blinders Chess Assistant.modulemap */,
+				0D08BDAF47DE0D5E4B2BE71827BBE3A9 /* Pods-Blinders Chess Assistant-acknowledgements.markdown */,
+				47741ADE937D61A88FDDC8F3FE9639D1 /* Pods-Blinders Chess Assistant-acknowledgements.plist */,
+				F084EB3683E55654A59E27AB555BC66E /* Pods-Blinders Chess Assistant-dummy.m */,
+				BBE9D5CF61140C1C8C55E01179857391 /* Pods-Blinders Chess Assistant-frameworks.sh */,
+				116B86EA7BAC948E215BCFC9A9439A1F /* Pods-Blinders Chess Assistant-Info.plist */,
+				423BFCCDC54203F5CB38B9C4971C3E5A /* Pods-Blinders Chess Assistant-umbrella.h */,
+				499E8F153FACC3D465423D25D8B19DEB /* Pods-Blinders Chess Assistant.debug.xcconfig */,
+				CCD35A32EB920624D9ED27BD2C08627B /* Pods-Blinders Chess Assistant.release.xcconfig */,
+			);
+			name = "Pods-Blinders Chess Assistant";
+			path = "Target Support Files/Pods-Blinders Chess Assistant";
+			sourceTree = "<group>";
+		};
+		8542057517E582848087F2EFB7F34539 /* SwiftSpeech */ = {
+			isa = PBXGroup;
+			children = (
+				244DE2B15972D1AD773BA33C4AFFDBCA /* Authorization.swift */,
+				CA90607C632A303F909AAD0E8E878435 /* Demos.swift */,
+				A639D49EB9CF30BABC3FCD473935EFAF /* Environments.swift */,
+				22231D34DB2DAAE1820B792AC25AA9E0 /* Extensions.swift */,
+				46EB01D78EB7A323389CFF17172B3421 /* LibraryContent.swift */,
+				00902796F57B28BF133B4ECE010736E8 /* RecordButton.swift */,
+				B21C96EDF13626B59749141416CDC20C /* Session.swift */,
+				7E43D4A7F523A1354811E7A110B0A0E4 /* SpeechRecognizer.swift */,
+				3467D3D9CAD28258EE8E46A954609D88 /* SwiftSpeech.swift */,
+				6B683F79E6DF4EF2009D3CF1E2722523 /* ViewModifiers.swift */,
+				625A7F836428DBA715B581D16935520C /* Support Files */,
+			);
+			name = SwiftSpeech;
+			path = SwiftSpeech;
+			sourceTree = "<group>";
+		};
+		A4144966F48C4DB762477A90F9EAA733 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8542057517E582848087F2EFB7F34539 /* SwiftSpeech */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				A4144966F48C4DB762477A90F9EAA733 /* Pods */,
+				62FCAF13ACC6B3302A73138B5B9F1FF4 /* Products */,
+				5E7B3CAFDB8CA4979C6EA42500F8474E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0394A59BA7C683622A9335811ABBF1FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3195D3FDB62FADA0F032EA8ACADD809C /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4213C8665875265EA1377816CB5C0BCE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52438C58672D9477E9E9C2682CA4596D /* Pods-Blinders Chess Assistant-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		643F0E188882F3B563053B773291B30D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F9A6570A1C6A74B40A008AF5A7706C1 /* SwiftSpeech-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8B7BE92AC21C1B36E1A84F6E8A8EEAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FBF676D58B0F58FC8295554C76D1C27 /* Pods-Blinders Chess AssistantTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BB6D4FB5051B893BF2947113A3DC527D /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7D109ABA7C4BA0B60B063AA74E39026 /* Build configuration list for PBXNativeTarget "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests" */;
+			buildPhases = (
+				0394A59BA7C683622A9335811ABBF1FB /* Headers */,
+				5DE69D2924C51D4BE5D787F95E00E267 /* Sources */,
+				4B59AD54EDF0671FAD0940C633C6E406 /* Frameworks */,
+				3E02A7382D990F33ED103F03431E7062 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				138B39B6E8AFCB66A3AE223A888A540D /* PBXTargetDependency */,
+			);
+			name = "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests";
+			productName = Pods_Blinders_Chess_Assistant_Blinders_Chess_AssistantUITests;
+			productReference = 144D671CB6B006110BB9AA63DB4AF481 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		C1DEA05FFE9644EBE3FB3B34A9F6D363 /* SwiftSpeech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC369DF52CE9203CADA8E32DEA5FF5C9 /* Build configuration list for PBXNativeTarget "SwiftSpeech" */;
+			buildPhases = (
+				643F0E188882F3B563053B773291B30D /* Headers */,
+				86D6DB40DA0EA7BE31924B26B340024E /* Sources */,
+				A31D5D36348DB7F99759CA3C3255FCCA /* Frameworks */,
+				CF535A66FB82EBDD7297AA5ED86CFE07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftSpeech;
+			productName = SwiftSpeech;
+			productReference = F47351358F947516FEC300C5C245CDD8 /* SwiftSpeech */;
+			productType = "com.apple.product-type.framework";
+		};
+		E037E86A12D3D27C16FAB688A59D697B /* Pods-Blinders Chess AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A870EF4E4061A3702580CF9B4D393E6C /* Build configuration list for PBXNativeTarget "Pods-Blinders Chess AssistantTests" */;
+			buildPhases = (
+				A8B7BE92AC21C1B36E1A84F6E8A8EEAA /* Headers */,
+				1EA393218BF95EC9DF053EC048888F1E /* Sources */,
+				5A46A8AAA6F6BADFCEA186FD4FA291A6 /* Frameworks */,
+				F5E00C395DB20063406536BD3B9CD5CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36B772EF2821BC17E187A2830441D4BF /* PBXTargetDependency */,
+			);
+			name = "Pods-Blinders Chess AssistantTests";
+			productName = Pods_Blinders_Chess_AssistantTests;
+			productReference = 1AA3630F77D94373EFD97F64743139F0 /* Pods-Blinders Chess AssistantTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		FDB55A62C2FE97573139439F98C80C69 /* Pods-Blinders Chess Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC4C527C0050BE6A8A0BE5E3C34D651 /* Build configuration list for PBXNativeTarget "Pods-Blinders Chess Assistant" */;
+			buildPhases = (
+				4213C8665875265EA1377816CB5C0BCE /* Headers */,
+				EBBA820769042DDD9E8B72BDCCD67CEF /* Sources */,
+				636E27B83A49342B5F1BC06075495887 /* Frameworks */,
+				16A0A5BDCA4B3521D5BF48C8EF85FF3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				709B1DEAD29E6E69B193CEC248F97741 /* PBXTargetDependency */,
+			);
+			name = "Pods-Blinders Chess Assistant";
+			productName = Pods_Blinders_Chess_Assistant;
+			productReference = 3E0E9FECDC3A44B7A0836E4513FE3CDC /* Pods-Blinders Chess Assistant */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 62FCAF13ACC6B3302A73138B5B9F1FF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDB55A62C2FE97573139439F98C80C69 /* Pods-Blinders Chess Assistant */,
+				BB6D4FB5051B893BF2947113A3DC527D /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests */,
+				E037E86A12D3D27C16FAB688A59D697B /* Pods-Blinders Chess AssistantTests */,
+				C1DEA05FFE9644EBE3FB3B34A9F6D363 /* SwiftSpeech */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		16A0A5BDCA4B3521D5BF48C8EF85FF3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E02A7382D990F33ED103F03431E7062 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF535A66FB82EBDD7297AA5ED86CFE07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E00C395DB20063406536BD3B9CD5CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EA393218BF95EC9DF053EC048888F1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0BD2E13C90F3AABB7FB66657DE53D44 /* Pods-Blinders Chess AssistantTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DE69D2924C51D4BE5D787F95E00E267 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BC9C62BC9999D8000E176D84123C00A /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86D6DB40DA0EA7BE31924B26B340024E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ADAF3204F138C1381254B1D65C03FFC /* Authorization.swift in Sources */,
+				17056265A37F5C6B0AEFB1B99667DA12 /* Demos.swift in Sources */,
+				4D7BC40A377E790EC65C72B1BA63E6A0 /* Environments.swift in Sources */,
+				626111584FB63C5158357AFD30E75670 /* Extensions.swift in Sources */,
+				F58BCBAC53B683327430AE4640327F9C /* LibraryContent.swift in Sources */,
+				B5CDB152ED01885EA022989261106F09 /* RecordButton.swift in Sources */,
+				14F09ADD111A1C8E8BC178197CE8FA26 /* Session.swift in Sources */,
+				0356D3C88B2FB13591BD94B0134D7625 /* SpeechRecognizer.swift in Sources */,
+				128438975A5C9B631117C0EE05245B91 /* SwiftSpeech.swift in Sources */,
+				78352B52EB5D936DA35F7B2DD93C71F9 /* SwiftSpeech-dummy.m in Sources */,
+				CC9262DBB1DFF8AFBB9A0B8F77983CE4 /* ViewModifiers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBBA820769042DDD9E8B72BDCCD67CEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA78B794FF79131ECEAFDC694DABB448 /* Pods-Blinders Chess Assistant-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		138B39B6E8AFCB66A3AE223A888A540D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSpeech;
+			target = C1DEA05FFE9644EBE3FB3B34A9F6D363 /* SwiftSpeech */;
+			targetProxy = D532F8FE611F69331A33B4D7B3D8F8B1 /* PBXContainerItemProxy */;
+		};
+		36B772EF2821BC17E187A2830441D4BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Blinders Chess Assistant";
+			target = FDB55A62C2FE97573139439F98C80C69 /* Pods-Blinders Chess Assistant */;
+			targetProxy = 5411A2220D3951A906E2B0EEC2F8D9F3 /* PBXContainerItemProxy */;
+		};
+		709B1DEAD29E6E69B193CEC248F97741 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftSpeech;
+			target = C1DEA05FFE9644EBE3FB3B34A9F6D363 /* SwiftSpeech */;
+			targetProxy = B5ADCFC8C1DE5ED773774A6EFC0FFA01 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2413257F48771096742A6B0B4893CBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCD35A32EB920624D9ED27BD2C08627B /* Pods-Blinders Chess Assistant.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Blinders Chess Assistant/Pods-Blinders Chess Assistant-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blinders Chess Assistant/Pods-Blinders Chess Assistant.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		367352D77EE6208FEDAABA5C0EAE7EEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 658ACD130B609AE8B5E4D8A8CD2CA8B5 /* Pods-Blinders Chess AssistantTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Blinders Chess AssistantTests/Pods-Blinders Chess AssistantTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blinders Chess AssistantTests/Pods-Blinders Chess AssistantTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		66909EB56532B3FE8C6A41AC72B01009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F2DE8AD2A9ACA1D15018B9BF65EC049 /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests/Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests/Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		86CC74147A13D5FA4EDD1B350D2F58AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D2EE949CD450B3ABCA15EFC319B79D /* SwiftSpeech.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpeech/SwiftSpeech-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpeech/SwiftSpeech-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSpeech/SwiftSpeech.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSpeech;
+				PRODUCT_NAME = SwiftSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8CDBC644251F39A7FB01DA270DEA574B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEE6A98B72DCE39B1A66A2D2003D5CDF /* Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests/Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests/Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A137C6F60344A70965B7542D3DB18652 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E41329A39FA68FEC0200E64EFC6CB5D /* SwiftSpeech.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSpeech/SwiftSpeech-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftSpeech/SwiftSpeech-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftSpeech/SwiftSpeech.modulemap";
+				PRODUCT_MODULE_NAME = SwiftSpeech;
+				PRODUCT_NAME = SwiftSpeech;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CA6D2FB8BAF2372FDA84A11F5F667152 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499E8F153FACC3D465423D25D8B19DEB /* Pods-Blinders Chess Assistant.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Blinders Chess Assistant/Pods-Blinders Chess Assistant-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blinders Chess Assistant/Pods-Blinders Chess Assistant.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED22C503CCCFCF4610A583F3146EEBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBF02C0CB2A8275CE983390E549DF9B7 /* Pods-Blinders Chess AssistantTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Blinders Chess AssistantTests/Pods-Blinders Chess AssistantTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Blinders Chess AssistantTests/Pods-Blinders Chess AssistantTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */,
+				5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BC4C527C0050BE6A8A0BE5E3C34D651 /* Build configuration list for PBXNativeTarget "Pods-Blinders Chess Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA6D2FB8BAF2372FDA84A11F5F667152 /* Debug */,
+				2413257F48771096742A6B0B4893CBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A870EF4E4061A3702580CF9B4D393E6C /* Build configuration list for PBXNativeTarget "Pods-Blinders Chess AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				367352D77EE6208FEDAABA5C0EAE7EEE /* Debug */,
+				ED22C503CCCFCF4610A583F3146EEBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7D109ABA7C4BA0B60B063AA74E39026 /* Build configuration list for PBXNativeTarget "Pods-Blinders Chess Assistant-Blinders Chess AssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66909EB56532B3FE8C6A41AC72B01009 /* Debug */,
+				8CDBC644251F39A7FB01DA270DEA574B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC369DF52CE9203CADA8E32DEA5FF5C9 /* Build configuration list for PBXNativeTarget "SwiftSpeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A137C6F60344A70965B7542D3DB18652 /* Debug */,
+				86CC74147A13D5FA4EDD1B350D2F58AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

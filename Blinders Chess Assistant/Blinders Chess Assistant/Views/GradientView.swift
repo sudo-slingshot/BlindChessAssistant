@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct GradientView: View {
-    let gradient=LinearGradient(colors: [Color.white, Color.black], startPoint: .top, endPoint: .bottom)
+    let gradient=LinearGradient(colors: [Color.white, Color.blue, Color.orange], startPoint: .top, endPoint: .bottom)
     var body: some View {
         ZStack{
-            gradient.opacity(1.0).ignoresSafeArea(.all)
+            gradient.opacity(0.4).ignoresSafeArea(.all)
         }
     }
 }

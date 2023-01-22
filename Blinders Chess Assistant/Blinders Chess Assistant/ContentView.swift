@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
+import SwiftSpeech
 
 struct ContentView: View {
+    
     var body: some View {
-    VStack {
-        RectangleView()
-    }
-        .padding()
+        VStack {
+            RectangleView()
+            SpeechRecognitionView().offset(y:-120)
+        }
     }
 }
 

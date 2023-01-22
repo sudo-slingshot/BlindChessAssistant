@@ -6,10 +6,32 @@
 //
 
 import SwiftUI
+import SwiftSpeech
+import AVFoundation
 
 struct SpeechRecognitionView: View {
+    @State private var text = "Push To Speak"
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(spacing: 35.0){
+            Text(text).font(.system(size: 25, weight: .bold, design: .default))
+            SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{session in
+                let systemSoundID: SystemSoundID = 1113
+                AudioServicesPlaySystemSound(systemSoundID)
+            }.onRecognizeLatest(update: $text).onStopRecording{session in
+                let systemSoundID: SystemSoundID = 1114
+                AudioServicesPlaySystemSound(systemSoundID)
+                let rules = text.contains("règles")
+                print(rules)
+                if (rules == true){
+                   
+                }
+            }
+        }.onAppear{
+            SwiftSpeech.requestSpeechRecognitionAuthorization()
+            do{
+                
+            }
+        }
     }
 }
 

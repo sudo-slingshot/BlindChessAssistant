@@ -1,0 +1,6 @@
+framework module Pods_Blinders_Chess_AssistantTests {
+  umbrella header "Pods-Blinders Chess AssistantTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

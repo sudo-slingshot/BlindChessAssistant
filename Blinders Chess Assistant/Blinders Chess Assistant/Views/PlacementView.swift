@@ -16,7 +16,7 @@ struct PlacementView: View {
             VStack(alignment: .leading){
                 Text("Placement des pièces").font(.title).foregroundColor(.primary)
                 HStack{
-                    Text("All the rules").font(.subheadline).foregroundColor(.secondary)
+                    Text("Toutes les règles de placement").font(.subheadline).foregroundColor(.secondary)
                 }
             }.offset(y: -310)
         }

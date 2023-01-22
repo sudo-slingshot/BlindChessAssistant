@@ -6,28 +6,30 @@
 //
 
 import SwiftUI
+import SwiftSpeech
 
 struct RectangleView: View {
-    
+    @State private var text = "Push To Speak"
     var body: some View {
         NavigationView{
             VStack{
-                    VStack(alignment: .center){
-                        CircleRobotImage()
-                        Text("Bonjour 👋🏻").font(.title).foregroundColor(.primary)
-                        HStack{
-                            Text("Je suis votre assistant virtuel pour vous apprendre a jouer aux échecs").foregroundColor(.secondary).font(.subheadline)
-                        }
-                        Divider()
+                VStack(alignment: .center){
+                    CircleRobotImage()
+                    Text("Bonjour 👋🏻").font(.title).foregroundColor(.primary)
+                    HStack{
+                        Text("Je suis votre assistant virtuel pour vous apprendre a jouer aux échecs").foregroundColor(.secondary).font(.subheadline)
                     }
-                    NavigationLink(destination: RulesChoice()){
-                        RoundedRectangle(cornerRadius: 20).frame(height: 90).foregroundColor(.gray).overlay(Text("Commencer une partie").offset(x:25).foregroundColor(.primary)).overlay(CircleImage().offset(x: -130))
-                    }
-                    
-                    NavigationLink(destination: RulesChoice()){
-                        RoundedRectangle(cornerRadius: 20).frame(height: 90).foregroundColor(.gray).overlay(Text("Consulter les règles").offset(x:25).foregroundColor(.primary)).overlay(RulesCircleImage().offset(x: -130))
-                    }
-                }.offset(y: -150)
+                    Divider()
+                }
+                NavigationLink(destination: RulesChoice()){
+                    RoundedRectangle(cornerRadius: 20).frame(height: 90).foregroundColor(.gray).overlay(Text("Commencer une partie").offset(x:25).foregroundColor(.primary)).overlay(CircleImage().offset(x: -130))
+                }
+                
+                NavigationLink(destination: RulesChoice()){
+                    RoundedRectangle(cornerRadius: 20).frame(height: 90).foregroundColor(.gray).overlay(Text("Consulter les règles").offset(x:25).foregroundColor(.primary)).overlay(RulesCircleImage().offset(x: -130))
+                }
+            }
+            
                 
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.size.height)
         }

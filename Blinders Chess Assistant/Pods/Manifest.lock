@@ -1,0 +1,16 @@
+PODS:
+  - SwiftSpeech (0.9.3)
+
+DEPENDENCIES:
+  - SwiftSpeech
+
+SPEC REPOS:
+  trunk:
+    - SwiftSpeech
+
+SPEC CHECKSUMS:
+  SwiftSpeech: f49b1dc8d841295ed3fd2e91233a607f45bfa529
+
+PODFILE CHECKSUM: c93c072a4321f0545c78f9801e32b7954045c7b5
+
+COCOAPODS: 1.11.3
