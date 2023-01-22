@@ -7,8 +7,8 @@
 ## What's BlindChess assistant ?
 Blindchess assistant is an application under development, allowing people with a visual disability to learn chess, the rules, and the pieces movement, with the help of a vocal assistant.
 
-## Fueled by Swift and Siri
-Once blindchess will reach an optimum development stage, we will release a Siri integration, to let people command the app with their voice.
+## Fueled by Swift and SwiftSpeech
+BlindChessAssistant relies on the SwiftSpeech package to onboard vocal interaction with your phone.
 
 ## Language support
 At the moment, BlindChessAssistant only supports french language. We are looking forward on working on an english version realy soon
@@ -18,3 +18,4 @@ At the moment, BlindChessAssistant only supports french language. We are looking
 | Version  | Changes commited |
 | ------------- |:-------------:|
 | V0.1      | Basic views designed, ready to host data     |
+|V0.2| SwiftSpeech integration, allowing a vocal interaction with a blind person|
