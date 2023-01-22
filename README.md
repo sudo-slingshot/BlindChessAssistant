@@ -8,6 +8,7 @@
 Blindchess assistant is an application under development, allowing people with a visual disability to learn chess, the rules, and the pieces movement, with the help of a vocal assistant.
 
 ## Fueled by Swift and SwiftSpeech
+<img src = "https://github.com/Cay-Zhang/SwiftSpeech/blob/master/Readme%20Assets/Icon.png?raw=true" alt="drawing" width="80"/>
 BlindChessAssistant relies on the SwiftSpeech package to onboard vocal interaction with your phone.
 
 ## Language support
