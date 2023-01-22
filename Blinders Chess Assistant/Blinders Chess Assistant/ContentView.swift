@@ -13,7 +13,6 @@ struct ContentView: View {
     var body: some View {
         VStack {
             RectangleView()
-            SpeechRecognitionView().offset(y:-120)
         }
     }
 }

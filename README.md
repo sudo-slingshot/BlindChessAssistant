@@ -18,4 +18,4 @@ At the moment, BlindChessAssistant only supports french language. We are looking
 | Version  | Changes commited |
 | ------------- |:-------------:|
 | V0.1      | Basic views designed, ready to host data     |
-|V0.2| SwiftSpeech integration, allowing a vocal interaction with a blind person|
+|V0.2| SwiftSpeech integration, allowing a vocal interaction with a blind person + actions integration allowing vocal triggers to modify app behavior |

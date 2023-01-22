@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct MouvementView: View {
+    @State private var text = "Push To Speak"
+    @State private var rules = false
+    @State private var placement = false
     var body: some View {
         VStack{
             ChessBack().offset(y:-220).edgesIgnoringSafeArea(.all)

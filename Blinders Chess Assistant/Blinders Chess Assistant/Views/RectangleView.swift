@@ -7,12 +7,21 @@
 
 import SwiftUI
 import SwiftSpeech
+import AVFoundation
 
 struct RectangleView: View {
+    
+    //Variables for vocal triggers
+    
     @State private var text = "Push To Speak"
+    @State private var rules = false
+    @State private var placement = false
     var body: some View {
         NavigationView{
             VStack{
+                
+                //Header display, for robot head & greeting message
+                
                 VStack(alignment: .center){
                     CircleRobotImage()
                     Text("Bonjour 👋🏻").font(.title).foregroundColor(.primary)
@@ -21,6 +30,9 @@ struct RectangleView: View {
                     }
                     Divider()
                 }
+                
+                //Visual menu
+                
                 NavigationLink(destination: RulesChoice()){
                     RoundedRectangle(cornerRadius: 20).frame(height: 90).foregroundColor(.gray).overlay(Text("Commencer une partie").offset(x:25).foregroundColor(.primary)).overlay(CircleImage().offset(x: -130))
                 }
@@ -28,12 +40,41 @@ struct RectangleView: View {
                 NavigationLink(destination: RulesChoice()){
                     RoundedRectangle(cornerRadius: 20).frame(height: 90).foregroundColor(.gray).overlay(Text("Consulter les règles").offset(x:25).foregroundColor(.primary)).overlay(RulesCircleImage().offset(x: -130))
                 }
+                
+                //Onboarding vocal triggers
+                NavigationLink("PlacementView", destination: PlacementView(), isActive: $rules).hidden()
+                
+                NavigationLink("PlacementView", destination: PlacementView(), isActive: $placement).hidden()
+                
+                //Recording button section
+                
+                Text(text).font(.system(size: 25, weight: .bold, design: .default))
+                SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{session in
+                    let systemSoundID: SystemSoundID = 1113
+                    AudioServicesPlaySystemSound(systemSoundID)
+                }.onRecognizeLatest(update: $text).onStopRecording{session in
+                    let systemSoundID: SystemSoundID = 1114
+                    AudioServicesPlaySystemSound(systemSoundID)
+                    
+                    //processing vocal speech to text treatment for view changes
+                    
+                    if (text.contains("règles")){
+                        rules = true
+                    }
+                    if (text.contains("placement")){
+                        placement = true
+                    }
+                    
+                    
+                }
             }
             
-                
-        }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.size.height)
+            
+        }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.size.height).onAppear{
+            SwiftSpeech.requestSpeechRecognitionAuthorization()
         }
     }
+}
     
     struct RectangleView_Previews: PreviewProvider {
         static var previews: some View {
