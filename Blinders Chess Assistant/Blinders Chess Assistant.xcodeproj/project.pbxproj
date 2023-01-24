@@ -29,6 +29,7 @@
 		6823E22C297C47D200E9D7E0 /* CircleImageMouvementBig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E22B297C47D200E9D7E0 /* CircleImageMouvementBig.swift */; };
 		6823E22E297C482400E9D7E0 /* MouvementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E22D297C482400E9D7E0 /* MouvementView.swift */; };
 		6823E230297C499700E9D7E0 /* CircleRobotImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E22F297C499700E9D7E0 /* CircleRobotImage.swift */; };
+		687197BA298077B000A19523 /* BeginGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687197B9298077B000A19523 /* BeginGameView.swift */; };
 		6895BD66297DA81500665B73 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 6895BD65297DA81500665B73 /* SwiftSpeech */; };
 		6895BD69297DAEE500665B73 /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6895BD68297DAEE500665B73 /* SpeechRecognitionView.swift */; };
 		962A9385654A0410EB34AF81 /* Pods_Blinders_Chess_Assistant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2142B3E28B9458EA6BA86C /* Pods_Blinders_Chess_Assistant.framework */; };
@@ -81,6 +82,7 @@
 		6823E22B297C47D200E9D7E0 /* CircleImageMouvementBig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageMouvementBig.swift; sourceTree = "<group>"; };
 		6823E22D297C482400E9D7E0 /* MouvementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouvementView.swift; sourceTree = "<group>"; };
 		6823E22F297C499700E9D7E0 /* CircleRobotImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleRobotImage.swift; sourceTree = "<group>"; };
+		687197B9298077B000A19523 /* BeginGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BeginGameView.swift; path = "/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Views/BeginGameView.swift"; sourceTree = "<absolute>"; };
 		6895BD67297DAEC700665B73 /* Blinders-Chess-Assistant-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Blinders-Chess-Assistant-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6895BD68297DAEE500665B73 /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionView.swift; path = "/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Views/SpeechRecognitionView.swift"; sourceTree = "<absolute>"; };
 		7A2142B3E28B9458EA6BA86C /* Pods_Blinders_Chess_Assistant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Blinders_Chess_Assistant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +195,7 @@
 		6823E223297C395600E9D7E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				687197B9298077B000A19523 /* BeginGameView.swift */,
 				6895BD68297DAEE500665B73 /* SpeechRecognitionView.swift */,
 				6823E21B297C2C4E00E9D7E0 /* RulesChoice.swift */,
 				6823E21F297C354500E9D7E0 /* PlacementView.swift */,
@@ -478,6 +481,7 @@
 			files = (
 				6823E216297C270000E9D7E0 /* HeaderView.swift in Sources */,
 				6823E222297C360900E9D7E0 /* ChessBack.swift in Sources */,
+				687197BA298077B000A19523 /* BeginGameView.swift in Sources */,
 				6823E228297C3EEA00E9D7E0 /* GradientView.swift in Sources */,
 				6823E214297C253A00E9D7E0 /* CircleImage.swift in Sources */,
 				6895BD69297DAEE500665B73 /* SpeechRecognitionView.swift in Sources */,

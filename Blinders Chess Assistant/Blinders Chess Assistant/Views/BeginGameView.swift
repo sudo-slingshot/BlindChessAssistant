@@ -1,41 +1,38 @@
 //
-//  MouvementView.swift
-//  Blinders Chess Assistant
+//  BeginGameView.swift
+//  
 //
-//  Created by Yohann Le Clech on 21/01/2023.
+//  Created by Yohann Le Clech on 24/01/2023.
 //
 
 import SwiftUI
 import SwiftSpeech
 import AVFoundation
 
-struct MouvementView: View {
+struct BeginGameView: View {
     @State private var text = "Push To Speak"
     @State private var rules = false
     @State private var placement = false
-    @State private var game = false
+    @State private var mouvement = false
     var body: some View {
-        VStack{
-            ChessBack().offset(y:-135).edgesIgnoringSafeArea(.all)
+        VStack(alignment: .center){
+            CircleRobotImage()
+            Text("En attente de connexion... 📡").font(.title).foregroundColor(.primary)
+            HStack{
+                Text("Assurez vous que votre plateau d'echecs soit allumé et détectable...").foregroundColor(.secondary).font(.subheadline)
+            }
             
-            CircleImageMouvementBig().offset(y: -220)
-            VStack(alignment: .leading){
-                Text("Mouvement des pièces").font(.title).foregroundColor(.primary)
-                HStack{
-                    Text("Tous les mouvements des pièces d'échecs").font(.subheadline).foregroundColor(.secondary)
-                }
-            }.offset(y: -230)
-            
+            //========================================
+                        
+                        
             //Vocal triggered navlinks
+                        
+                NavigationLink("Mouvement", destination: MouvementView(), isActive: $mouvement).hidden()
+                        
+                NavigationLink("Placement", destination: PlacementView(), isActive: $placement).hidden()
             
-            NavigationLink("PlacementView", destination: PlacementView(), isActive: $placement).hidden()
             
-            NavigationLink("GameView", destination: BeginGameView(), isActive: $game).hidden()
-          
-            
-            
-//=======================================
-            
+            //========================================
             
             
             //Recording button section
@@ -54,16 +51,16 @@ struct MouvementView: View {
                     placement = true
                 }
                 
-                if (text.contains("partie")){
-                    game = true
+                if (text.contains("mouvement")){
+                    mouvement = true
                 }
             }
         }
     }
 }
 
-struct MouvementView_Previews: PreviewProvider {
+struct BeginGameView_Previews: PreviewProvider {
     static var previews: some View {
-        MouvementView()
+        BeginGameView()
     }
 }

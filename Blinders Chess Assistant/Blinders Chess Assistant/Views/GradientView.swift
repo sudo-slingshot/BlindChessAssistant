@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct GradientView: View {
-    let gradient=LinearGradient(colors: [Color.white, Color.blue, Color.orange], startPoint: .top, endPoint: .bottom)
+    let gradient=RadialGradient(gradient: Gradient(colors: [.green,.blue]), center: .center, startRadius: 10, endRadius: 500)
     var body: some View {
         ZStack{
-            gradient.opacity(0.4).ignoresSafeArea(.all)
+            gradient.opacity(0.6).ignoresSafeArea(.all)
         }
     }
 }
