@@ -8,15 +8,31 @@
 import SwiftUI
 import SwiftSpeech
 import AVFoundation
+import AVFAudio
 
 struct RectangleView: View {
     
     //Variables for vocal triggers
-    
+    let speechSynthesizer = AVSpeechSynthesizer()
     @State private var text = "Push To Speak"
     @State private var mouvement = false
     @State private var placement = false
     @State private var game = false
+    
+    
+    //String TTS
+    let utterance = AVSpeechUtterance(string: "Bonjour, je suis votre assistant virtuel. Je peux vous apprendre les règles des echecs, ainsi que le placement et le mouvement des pièces du jeu. Appuyez sur le bouton situé en bas de l'écran pour communiquer avec moi")
+    
+    
+    //Text To Speech Function
+    private func TTS(){
+        utterance.pitchMultiplier = 1.0
+        utterance.rate = 0.5
+        utterance.voice = AVSpeechSynthesisVoice(language: "fr")
+         
+        speechSynthesizer.speak(utterance)
+    }
+    
     var body: some View {
         NavigationView{
             VStack{
@@ -30,6 +46,8 @@ struct RectangleView: View {
                         Text("Je suis votre assistant virtuel pour vous apprendre a jouer aux échecs").foregroundColor(.secondary).font(.subheadline)
                     }
                     Divider()
+                }.onAppear{
+                    TTS()
                 }
                 
                 //Visual menu
@@ -52,7 +70,9 @@ struct RectangleView: View {
                 //Recording button section
                 
                 Text(text).font(.system(size: 25, weight: .bold, design: .default))
-                SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{session in
+                SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{
+                    session in
+                    speechSynthesizer.stopSpeaking(at: .immediate)
                     let systemSoundID: SystemSoundID = 1113
                     AudioServicesPlaySystemSound(systemSoundID)
                 }.onRecognizeLatest(update: $text).onStopRecording{session in
@@ -64,7 +84,7 @@ struct RectangleView: View {
                     if (text.contains("mouvement")){
                         mouvement = true
                     }
-                    if (text.contains("placement")){
+                    if (text.contains("place")){
                         placement = true
                     }
                     

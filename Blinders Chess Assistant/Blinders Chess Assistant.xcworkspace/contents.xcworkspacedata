@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Funcs.swift">
+   </FileRef>
+   <FileRef
       location = "group:/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Views/BeginGameView.swift">
    </FileRef>
    <FileRef
