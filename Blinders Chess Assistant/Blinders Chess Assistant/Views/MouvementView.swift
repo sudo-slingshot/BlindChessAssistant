@@ -57,6 +57,7 @@ struct MouvementView: View {
             
             Text(text).font(.system(size: 25, weight: .bold, design: .default))
             SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{session in
+                speechSynthesizer.stopSpeaking(at: .immediate)
                 let systemSoundID: SystemSoundID = 1113
                 AudioServicesPlaySystemSound(systemSoundID)
             }.onRecognizeLatest(update: $text).onStopRecording{session in
@@ -65,7 +66,7 @@ struct MouvementView: View {
                 
                 //processing vocal speech to text treatment for view changes
                 
-                if (text.contains("placement")){
+                if (text.contains("place")){
                     placement = true
                 }
                 
@@ -79,6 +80,31 @@ struct MouvementView: View {
                     TTS(speech: pionspeech)
                 }
                 
+                if text.contains("Tour")||text.contains("tour"){
+                    let tourspeech="la tour peut se déplacer en ligne droite uniquement sans limite de portée. Elle ne peut pas sauter par dessus les pièces lors de ses mouvements"
+                    TTS(speech: tourspeech)
+                }
+                
+                
+                if text.contains("Reine")||text.contains("reine"){
+                    let reinespeech="La reine peut se déplacer en ligne droite et en diagonale. Elle ne peut pas sauter par dessus les autres pièces lors de ses mouvements"
+                    TTS(speech: reinespeech)
+                }
+                
+                if text.contains("roi")||text.contains("Roi"){
+                    let roispeech="le roi ne peut se déplacer que d'une case en diagonale ou en ligne droite"
+                    TTS(speech: roispeech)
+                }
+                
+                if text.contains("Fou")||text.contains("fou"){
+                    let fouspeech="Le fou ne peut se déplacer qu'en diagonale, avec une portée illimitée"
+                    TTS(speech: fouspeech)
+                }
+                
+                if text.contains("Cavalier")||text.contains("cavalier")||text.contains("cheval")||text.contains("Cheval"){
+                    let chevalspeech="Le cavalier se déplace toujours de deux cases en ligne droite, puis une case en diagonale. Contrairement a toutes les autres pièces, c'est la seule qui peut sauter par dessus les autres pour atteindre sa destination de déplacement"
+                    TTS(speech: chevalspeech)
+                }
                 //TODO : Autres mouvements
             }
         }
