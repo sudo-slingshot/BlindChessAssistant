@@ -23,3 +23,4 @@ At the moment, BlindChessAssistant only supports french language. We are looking
 |V0.3| SwiftSpeech & vocal triggers integration to all views |
 |V0.4| Text To Speech implementation for basic responses on user questions + pawn movement question answered (TODO : all the other pieces movement responses) |
 |V0.5| All the pieces movements responses have been integrated & can be triggered with voice (todo : create rulesview + text to speech to integrate for rules enonciation) |
+|V0.6| Rules refactoring |

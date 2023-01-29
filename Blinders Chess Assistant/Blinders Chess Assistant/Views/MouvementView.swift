@@ -81,31 +81,30 @@ struct MouvementView: View {
                 }
                 
                 if text.contains("Tour")||text.contains("tour"){
-                    let tourspeech="la tour peut se déplacer en ligne droite uniquement sans limite de portée. Elle ne peut pas sauter par dessus les pièces lors de ses mouvements"
+                    let tourspeech="La Tour se déplace horizontalement ou verticalement, d’autant de cases qu’elle veut. La Tour ne peut pas aller sur une case occupée par une pièce de son camp, ni sauter au-dessus d’une autre pièce."
                     TTS(speech: tourspeech)
                 }
                 
                 
                 if text.contains("Reine")||text.contains("reine"){
-                    let reinespeech="La reine peut se déplacer en ligne droite et en diagonale. Elle ne peut pas sauter par dessus les autres pièces lors de ses mouvements"
+                    let reinespeech="La Dame se déplace comme la Tour et le Fou: elle peut donc se déplacer verticalement, horizontalement et en diagonale, d’autant de cases qu’elle veut (sans bien sûr pouvoir passer au-dessus d’une autre pièce ou pouvoir prendre une pièce de son propre camp). Comme c’est la pièce la plus mobile, c’est aussi la pièce qui a la plus grande valeur."
                     TTS(speech: reinespeech)
                 }
                 
                 if text.contains("roi")||text.contains("Roi"){
-                    let roispeech="le roi ne peut se déplacer que d'une case en diagonale ou en ligne droite"
+                    let roispeech="Le Roi se déplace d’une seule case, dans toutes les directions. Lorsqu’un Roi est attaqué par une pièce adverse, on dit qu’il est en échec. Un joueur n’a pas le droit de laisser son Roi en échec. Il n’a pas non plus le droit de déplacer son Roi sur une case où celui-ci sera attaqué (donc en échec)."
                     TTS(speech: roispeech)
                 }
                 
                 if text.contains("Fou")||text.contains("fou"){
-                    let fouspeech="Le fou ne peut se déplacer qu'en diagonale, avec une portée illimitée"
+                    let fouspeech="Le Fou se déplace en diagonale, d’autant de cases qu’il veut."
                     TTS(speech: fouspeech)
                 }
                 
                 if text.contains("Cavalier")||text.contains("cavalier")||text.contains("cheval")||text.contains("Cheval"){
-                    let chevalspeech="Le cavalier se déplace toujours de deux cases en ligne droite, puis une case en diagonale. Contrairement a toutes les autres pièces, c'est la seule qui peut sauter par dessus les autres pour atteindre sa destination de déplacement"
+                    let chevalspeech="le Cavalier se déplace de deux cases horizontalement ou verticalement, puis fait un pas sur le côté. Il effectue donc une sorte de « L » majuscule, tourné dans n’importe quel sens. Le Cavalier est la seule pièce qui peut sauter au-dessus des autres pièces (les siennes et celles de l’adversaire)"
                     TTS(speech: chevalspeech)
                 }
-                //TODO : Autres mouvements
             }
         }
     }
