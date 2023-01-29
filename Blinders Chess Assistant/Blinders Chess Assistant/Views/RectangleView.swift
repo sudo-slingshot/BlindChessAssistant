@@ -18,6 +18,7 @@ struct RectangleView: View {
     @State private var mouvement = false
     @State private var placement = false
     @State private var game = false
+    @State private var rules =  false
     
     
     //String TTS
@@ -52,7 +53,7 @@ struct RectangleView: View {
                 
                 //Visual menu
                 
-                NavigationLink(destination: RulesChoice()){
+                NavigationLink(destination: BeginGameView()){
                     RoundedRectangle(cornerRadius: 20).frame(height: 90).foregroundColor(.gray).overlay(Text("Commencer une partie").offset(x:25).foregroundColor(.primary)).overlay(CircleImage().offset(x: -130))
                 }
                 
@@ -66,6 +67,8 @@ struct RectangleView: View {
                 NavigationLink("PlacementView", destination: PlacementView(), isActive: $placement).hidden()
                 
                 NavigationLink("GameView", destination: BeginGameView(), isActive: $game).hidden()
+                
+                NavigationLink("RulesView", destination: RulesView(), isActive: $rules).hidden()
                 
                 //Recording button section
                 
@@ -90,6 +93,10 @@ struct RectangleView: View {
                     
                     if (text.contains("partie")){
                         game = true
+                    }
+                    
+                    if text.contains("Règles") || text.contains("règles"){
+                        rules = true
                     }
                     
                     

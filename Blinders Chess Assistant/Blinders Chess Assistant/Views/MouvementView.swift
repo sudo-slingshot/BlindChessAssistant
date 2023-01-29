@@ -76,7 +76,7 @@ struct MouvementView: View {
                 
                 //gestion du mouvement des pièces
                 if text.contains("Pion") || text.contains ("pion"){
-                    let pionspeech = "le pion peut bouger uniquement d'une case vers l'avant. Si le pion se trouve sur sa case de départ il peu bouger de deux cases vers l'avant. Il ne peut prendre les pièces adverses que si cette dernière se situe a une case de distance en diagonale"
+                    let pionspeech = "Le pion se déplace droit devant lui, d'une seule case à chaque coup et sans jamais pouvoir reculer. Lors de son premier déplacement (alors qu'il est sur sa case initiale), un pion peut avancer, au choix, d'une ou de deux cases en un seul coup. Dans les deux cas, la case d'arrivée doit être libre de toute pièce amie ou ennemie ; si le pion se déplace de deux cases, aucune pièce ne doit être sur son chemin."
                     TTS(speech: pionspeech)
                 }
                 
@@ -86,7 +86,7 @@ struct MouvementView: View {
                 }
                 
                 
-                if text.contains("Reine")||text.contains("reine"){
+                if text.contains("Reine")||text.contains("reine")||text.contains("Dame")||text.contains("dame"){
                     let reinespeech="La Dame se déplace comme la Tour et le Fou: elle peut donc se déplacer verticalement, horizontalement et en diagonale, d’autant de cases qu’elle veut (sans bien sûr pouvoir passer au-dessus d’une autre pièce ou pouvoir prendre une pièce de son propre camp). Comme c’est la pièce la plus mobile, c’est aussi la pièce qui a la plus grande valeur."
                     TTS(speech: reinespeech)
                 }
