@@ -49,6 +49,8 @@ struct RectangleView: View {
                     Divider()
                 }.onAppear{
                     TTS()
+                }.onDisappear{
+                    speechSynthesizer.stopSpeaking(at: .immediate)
                 }
                 
                 //Visual menu
@@ -71,8 +73,7 @@ struct RectangleView: View {
                 NavigationLink("RulesView", destination: RulesView(), isActive: $rules).hidden()
                 
                 //Recording button section
-                
-                Text(text).font(.system(size: 25, weight: .bold, design: .default))
+                Text(text).font(.system(size: 25, weight: .bold, design: .default)).offset(y:-20)
                 SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{
                     session in
                     speechSynthesizer.stopSpeaking(at: .immediate)
@@ -101,7 +102,7 @@ struct RectangleView: View {
                     
                     
                 }
-            }
+            }.offset(y:-10)
             
             
         }.frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.size.height).onAppear{

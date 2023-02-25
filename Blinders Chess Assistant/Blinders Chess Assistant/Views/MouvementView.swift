@@ -38,7 +38,9 @@ struct MouvementView: View {
                 Text("Mouvement des pièces").font(.title).foregroundColor(.primary)
                 HStack{
                     Text("Tous les mouvements des pièces d'échecs").font(.subheadline).foregroundColor(.secondary)
-                }.onAppear{TTS(speech: utterance)}
+                }.onAppear{TTS(speech: utterance)}.onDisappear{
+                    speechSynthesizer.stopSpeaking(at: .immediate)
+                }
             }.offset(y: -230)
             
             //Vocal triggered navlinks

@@ -42,6 +42,8 @@ struct RulesView: View {
                 }.onAppear{
                     let rulesspeech = "Lorsque vos pièces sont placées, la partie commence. Les blancs jouent le premier coup puis les joueurs jouent à tour de rôle en déplaçant à chaque fois une de leurs pièces. Le but du jeu est de mettre le roi adverse dans une position ou il ne peut s'échapper a une capture. C'est ce que l'on appelle: l'échec et mat. Lorsqu'un roi est menacé de capture, on dit qu'il est « en échec ». on peut tenter de parer la menace en déplaçant le roi, en interposant une pièce ou en capturant la pièce attaquante. Si cette menace est imparable,on dit qu'il y a échec et mat et la partie se termine sur la victoire du joueur qui mate"
                     TTS(speech: rulesspeech)
+                }.onDisappear{
+                    speechSynthesizer.stopSpeaking(at: .immediate)
                 }
                 
                 //Onboarding vocal triggers

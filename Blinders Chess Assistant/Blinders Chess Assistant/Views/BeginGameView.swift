@@ -39,6 +39,8 @@ struct BeginGameView: View {
                 let connectionspeech = "Nous recherchons actuellement votre plateau d'échecs. Assurez vous que votre plateau soit allumé et détectable, et que le bluetooth de votre téléphone soit actif."
                 
                 TTS(speech: connectionspeech)
+            }.onDisappear{
+                speechSynthesizer.stopSpeaking(at: .immediate)
             }
             
             //========================================

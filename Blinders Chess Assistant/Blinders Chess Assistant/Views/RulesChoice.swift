@@ -50,6 +50,8 @@ struct RulesChoice: View {
                     let rulesspeech = "Voulez vous vous enquérir des règles du jeu d'échecs, du placement des pièces sur l'échiquer ou des mouvements autorisés?"
                     
                     TTS(speech: rulesspeech)
+                }.onDisappear{
+                    speechSynthesizer.stopSpeaking(at: .immediate)
                 }
                 
                 //Onboarding vocal triggers

@@ -12,12 +12,14 @@ import AVFAudio
 
 struct PlacementView: View {
     let speechSynthesizer = AVSpeechSynthesizer()
-    let utterance = "Le placement des pièces sur le plateau fourni est le suivant. Placez votre reine sur la case se trouvant juste devant le trou sur le bord du plateau. Placez ensuite votre roi sur la case se trouvant juste devant la bosse sur le bord du plateau. De part et d'autre du roi et de la reine, placez vos fous. De part et d'autre des fous, placez vos cavaliers. Enfin, placez vos deux tours restantes de part et d'autre des cavalier"
+    let utterance = "Nous allons commencer a placer les pièces ensemble. Lorsque vous êtes prêt a placer vos pièces, appuyez sur le bouton et dites : continuez"
+    @State private var placingspeech = ""
     
     @State private var text = "Push To Speak"
     @State private var rules = false
     @State private var mouvement = false
     @State private var game = false
+    @State private var placingstage = 0
     
     //Text To Speech Function
     private func TTS(speech: String){
@@ -43,7 +45,9 @@ struct PlacementView: View {
                 }.onAppear{
                     TTS(speech: utterance)
                 }
-            }.offset(y: -230)
+            }.offset(y: -230).onDisappear{
+                speechSynthesizer.stopSpeaking(at: .immediate)
+            }
          
             
             
@@ -77,6 +81,55 @@ struct PlacementView: View {
                 AudioServicesPlaySystemSound(systemSoundID)
                 
                 //processing vocal speech to text treatment for view changes
+                
+                //processing request to move on in the chess pieces placing process
+                if (text.contains("continu") || text.contains("Continu")){
+                    placingstage = placingstage + 1
+                    if (placingstage == 1){
+                        placingspeech = "Pour commencer, positionnons le plateau d'échecs. Sur certains bords se trouvent un trou et une bosse côte a côte. Positionnez l'un de ces deux bords devant vous. . . . . Voulez vous que je répète ou que l'on recommence le placement des pièces du début ?"
+                    }
+                    
+                    if (placingstage == 2){
+                        placingspeech = "Placez le roi sur la case située devant la bosse se trouvant sur le bord du plateau"
+                    }
+                    
+                    if (placingstage == 3){
+                        placingspeech = "Placez la reine sur la case située devant le trou se trouvant sur le bord du plateau"
+                    }
+                    
+                    if (placingstage == 4){
+                        placingspeech="Placez vos fous sur les cases a côté du roi et de la reine."
+                    }
+                    
+                    if (placingstage == 5){
+                        placingspeech="Placez vos cavaliers sur les cases libres a côté de vos fous"
+                    }
+                    
+                    if (placingstage==6){
+                        placingspeech="Placez vos tours sur les cases libres a côté de vos cavaliers. Si votre placement est correct, les tours se trouvent sur les cases en bord de plateau"
+                    }
+                    
+                    if (placingstage == 7){
+                        placingspeech = "Placez vos pions devant chaque pièce que vous venez de placer jusqu'alors."
+                    }
+                    
+                    if (placingstage >= 8){
+                        placingspeech="Nous avons terminé de placer vos pièces. Si vous souhaitez recommencer le placement de vos pièces, appuyez sur le bouton et dites : recommencer"
+                    }
+                    
+                    TTS(speech: placingspeech)
+                }
+                
+                //processing the "repeat" request
+                if (text.contains("Répète")||text.contains("répèt")){
+                    TTS(speech: placingspeech)
+                }
+                
+                //processing the "begin again" request
+                if (text.contains("Recommence")||text.contains("recommence")){
+                    placingstage = 0
+                    TTS(speech: utterance)
+                }
                 
                 if (text.contains("mouvement")){
                     mouvement = true
