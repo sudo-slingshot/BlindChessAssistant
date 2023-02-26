@@ -32,6 +32,8 @@
 		6823E22E297C482400E9D7E0 /* MouvementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E22D297C482400E9D7E0 /* MouvementView.swift */; };
 		6823E230297C499700E9D7E0 /* CircleRobotImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6823E22F297C499700E9D7E0 /* CircleRobotImage.swift */; };
 		684EDE1C29848E2A00363491 /* Funcs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684EDE1B29848E2A00363491 /* Funcs.swift */; };
+		6862E42129ABC244009B0CCD /* AnimatableGradientModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6862E42029ABC244009B0CCD /* AnimatableGradientModifier.swift */; };
+		6862E42529ABC9A7009B0CCD /* StaticGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6862E42429ABC9A7009B0CCD /* StaticGradientView.swift */; };
 		687197BA298077B000A19523 /* BeginGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687197B9298077B000A19523 /* BeginGameView.swift */; };
 		6895BD66297DA81500665B73 /* SwiftSpeech in Frameworks */ = {isa = PBXBuildFile; productRef = 6895BD65297DA81500665B73 /* SwiftSpeech */; };
 		6895BD69297DAEE500665B73 /* SpeechRecognitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6895BD68297DAEE500665B73 /* SpeechRecognitionView.swift */; };
@@ -88,6 +90,8 @@
 		6823E22D297C482400E9D7E0 /* MouvementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouvementView.swift; sourceTree = "<group>"; };
 		6823E22F297C499700E9D7E0 /* CircleRobotImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleRobotImage.swift; sourceTree = "<group>"; };
 		684EDE1B29848E2A00363491 /* Funcs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Funcs.swift; path = "/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Funcs.swift"; sourceTree = "<absolute>"; };
+		6862E42029ABC244009B0CCD /* AnimatableGradientModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimatableGradientModifier.swift; path = "/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/ViewAssets/AnimatableGradientModifier.swift"; sourceTree = "<absolute>"; };
+		6862E42429ABC9A7009B0CCD /* StaticGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticGradientView.swift; sourceTree = "<group>"; };
 		687197B9298077B000A19523 /* BeginGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BeginGameView.swift; path = "/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Views/BeginGameView.swift"; sourceTree = "<absolute>"; };
 		6895BD67297DAEC700665B73 /* Blinders-Chess-Assistant-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Blinders-Chess-Assistant-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6895BD68297DAEE500665B73 /* SpeechRecognitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpeechRecognitionView.swift; path = "/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Views/SpeechRecognitionView.swift"; sourceTree = "<absolute>"; };
@@ -211,6 +215,7 @@
 				6823E217297C276300E9D7E0 /* RectangleView.swift */,
 				6823E215297C270000E9D7E0 /* HeaderView.swift */,
 				6823E227297C3EEA00E9D7E0 /* GradientView.swift */,
+				6862E42429ABC9A7009B0CCD /* StaticGradientView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 		6823E224297C399000E9D7E0 /* ViewAssets */ = {
 			isa = PBXGroup;
 			children = (
+				6862E42029ABC244009B0CCD /* AnimatableGradientModifier.swift */,
 				6823E221297C360900E9D7E0 /* ChessBack.swift */,
 				6823E213297C253A00E9D7E0 /* CircleImage.swift */,
 				6823E229297C478600E9D7E0 /* CircleImageMouvement.swift */,
@@ -507,7 +513,9 @@
 				6823E230297C499700E9D7E0 /* CircleRobotImage.swift in Sources */,
 				68119FCE298683F600C1F888 /* RulesView.swift in Sources */,
 				6823E22C297C47D200E9D7E0 /* CircleImageMouvementBig.swift in Sources */,
+				6862E42529ABC9A7009B0CCD /* StaticGradientView.swift in Sources */,
 				6823E21C297C2C4E00E9D7E0 /* RulesChoice.swift in Sources */,
+				6862E42129ABC244009B0CCD /* AnimatableGradientModifier.swift in Sources */,
 				6823E226297C39D300E9D7E0 /* CirclePlacementImageBig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

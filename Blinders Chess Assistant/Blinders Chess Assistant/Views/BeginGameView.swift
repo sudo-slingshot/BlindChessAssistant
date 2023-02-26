@@ -30,58 +30,60 @@ struct BeginGameView: View {
     
     
     var body: some View {
-        VStack(alignment: .center){
-            CircleRobotImage()
-            Text("En attente de connexion... 📡").font(.title).foregroundColor(.primary)
-            HStack{
-                Text("Assurez vous que votre plateau d'echecs soit allumé et détectable...").foregroundColor(.secondary).font(.subheadline)
-            }.onAppear{
-                let connectionspeech = "Nous recherchons actuellement votre plateau d'échecs. Assurez vous que votre plateau soit allumé et détectable, et que le bluetooth de votre téléphone soit actif."
+        ZStack{
+            StaticGradientView()
+            VStack(alignment: .center){
+                CircleRobotImage().frame(maxHeight: .infinity, alignment: .top)
+                Text("En attente de connexion... 📡").font(.title).foregroundColor(.primary).frame(maxHeight: .infinity, alignment: .top)
+                Text("Assurez vous que votre plateau d'echecs soit allumé et détectable...").foregroundColor(.secondary).font(.subheadline).frame(maxHeight: .infinity, alignment: .top)
                 
-                TTS(speech: connectionspeech)
-            }.onDisappear{
-                speechSynthesizer.stopSpeaking(at: .immediate)
-            }
-            
-            //========================================
-                        
-                        
-            //Vocal triggered navlinks
-                        
+                //========================================
+                
+                
+                //Vocal triggered navlinks
+                
                 NavigationLink("Mouvement", destination: MouvementView(), isActive: $mouvement).hidden()
-                        
+                
                 NavigationLink("Placement", destination: PlacementView(), isActive: $placement).hidden()
-            
-            NavigationLink("RulesChoice", destination: RulesChoice(), isActive: $choice).hidden()
-            
-            
-            //========================================
-            
-            
-            //Recording button section
-            
-            Text(text).font(.system(size: 25, weight: .bold, design: .default)).offset(y:150)
-            SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{session in
-                let systemSoundID: SystemSoundID = 1113
-                AudioServicesPlaySystemSound(systemSoundID)
-            }.onRecognizeLatest(update: $text).onStopRecording{session in
-                let systemSoundID: SystemSoundID = 1114
-                AudioServicesPlaySystemSound(systemSoundID)
                 
-                //processing vocal speech to text treatment for view changes
+                NavigationLink("RulesChoice", destination: RulesChoice(), isActive: $choice).hidden()
                 
-                if (text.contains("placement")){
-                    placement = true
+                
+                //========================================
+                
+                
+                //Recording button section
+                VStack{
+                    Text(text).font(.system(size: 25, weight: .bold, design: .default))
+                    SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{session in
+                        let systemSoundID: SystemSoundID = 1113
+                        AudioServicesPlaySystemSound(systemSoundID)
+                    }.onRecognizeLatest(update: $text).onStopRecording{session in
+                        let systemSoundID: SystemSoundID = 1114
+                        AudioServicesPlaySystemSound(systemSoundID)
+                        
+                        //processing vocal speech to text treatment for view changes
+                        
+                        if (text.contains("placement")){
+                            placement = true
+                        }
+                        
+                        if (text.contains("mouvement")){
+                            mouvement = true
+                        }
+                        
+                        if text.contains("Règles")||text.contains("règles"){
+                            choice = true
+                        }
+                    }
+                }.frame(maxHeight: .infinity, alignment: .bottom).onAppear{
+                    let connectionspeech = "Nous recherchons actuellement votre plateau d'échecs. Assurez vous que votre plateau soit allumé et détectable, et que le bluetooth de votre téléphone soit actif."
+                    
+                    TTS(speech: connectionspeech)
+                }.onDisappear{
+                    speechSynthesizer.stopSpeaking(at: .immediate)
                 }
-                
-                if (text.contains("mouvement")){
-                    mouvement = true
-                }
-                
-                if text.contains("Règles")||text.contains("règles"){
-                    choice = true
-                }
-            }.offset(y:150)
+            }
         }
     }
 }

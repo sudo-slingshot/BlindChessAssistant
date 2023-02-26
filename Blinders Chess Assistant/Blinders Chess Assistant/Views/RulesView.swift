@@ -31,54 +31,53 @@ struct RulesView: View {
     
     
     var body: some View {
-        VStack{
-            ChessBack().offset(y:-135).edgesIgnoringSafeArea(.all)
-            
-            RulesCircleImageBig().offset(y: -220)
-            VStack(alignment: .leading){
-                Text("Règles du jeu").font(.title).foregroundColor(.primary)
-                HStack{
-                    Text("Principe du jeu d'échecs").font(.subheadline).foregroundColor(.secondary)
-                }.onAppear{
-                    let rulesspeech = "Lorsque vos pièces sont placées, la partie commence. Les blancs jouent le premier coup puis les joueurs jouent à tour de rôle en déplaçant à chaque fois une de leurs pièces. Le but du jeu est de mettre le roi adverse dans une position ou il ne peut s'échapper a une capture. C'est ce que l'on appelle: l'échec et mat. Lorsqu'un roi est menacé de capture, on dit qu'il est « en échec ». on peut tenter de parer la menace en déplaçant le roi, en interposant une pièce ou en capturant la pièce attaquante. Si cette menace est imparable,on dit qu'il y a échec et mat et la partie se termine sur la victoire du joueur qui mate"
+        ZStack{
+            StaticGradientView()
+            VStack{
+                RulesCircleImageBig().frame(maxHeight: .infinity, alignment: .top)
+                VStack{
+                    Text("Règles du jeu").font(.title).foregroundColor(.primary).frame(maxHeight: .infinity, alignment: .bottom)
+                    
+                    //Onboarding vocal triggers
+                    NavigationLink("MouvementView", destination: MouvementView(), isActive: $mouvement).hidden()
+                    
+                    NavigationLink("PlacementView", destination: PlacementView(), isActive: $placement).hidden()
+                    
+                    NavigationLink("GameView", destination: BeginGameView(), isActive: $game).hidden()
+                    
+                    
+                }.offset(y:-200)
+                
+                
+                //Recording button section
+                VStack{
+                    Text(text).font(.system(size: 25, weight: .bold, design: .default))
+                    SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{session in
+                        speechSynthesizer.stopSpeaking(at: .immediate)
+                        let systemSoundID: SystemSoundID = 1113
+                        AudioServicesPlaySystemSound(systemSoundID)
+                    }.onRecognizeLatest(update: $text).onStopRecording{session in
+                        let systemSoundID: SystemSoundID = 1114
+                        AudioServicesPlaySystemSound(systemSoundID)
+                        
+                        if (text.contains("mouvement")){
+                            mouvement = true
+                        }
+                        if (text.contains("place")){
+                            placement = true
+                        }
+                        
+                        if (text.contains("partie")){
+                            game = true
+                        }
+                        
+                    }
+                }.frame(maxHeight: .infinity, alignment: .bottom).onAppear{
+                    let rulesspeech = "Voulez vous vous enquérir des règles du jeu d'échecs, du placement des pièces sur l'échiquer ou des mouvements autorisés?"
                     TTS(speech: rulesspeech)
                 }.onDisappear{
                     speechSynthesizer.stopSpeaking(at: .immediate)
                 }
-                
-                //Onboarding vocal triggers
-                NavigationLink("MouvementView", destination: MouvementView(), isActive: $mouvement).hidden()
-                
-                NavigationLink("PlacementView", destination: PlacementView(), isActive: $placement).hidden()
-                
-                NavigationLink("GameView", destination: BeginGameView(), isActive: $game).hidden()
-            
-                
-            }.offset(y:-200)
-            
-            
-            //Recording button section
-            
-            Text(text).font(.system(size: 25, weight: .bold, design: .default))
-            SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{session in
-                speechSynthesizer.stopSpeaking(at: .immediate)
-                let systemSoundID: SystemSoundID = 1113
-                AudioServicesPlaySystemSound(systemSoundID)
-            }.onRecognizeLatest(update: $text).onStopRecording{session in
-                let systemSoundID: SystemSoundID = 1114
-                AudioServicesPlaySystemSound(systemSoundID)
-                
-                if (text.contains("mouvement")){
-                    mouvement = true
-                }
-                if (text.contains("place")){
-                    placement = true
-                }
-                
-                if (text.contains("partie")){
-                    game = true
-                }
-                
             }
         }
     }

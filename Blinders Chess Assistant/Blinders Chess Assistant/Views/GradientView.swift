@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct GradientView: View {
-    let gradient=RadialGradient(gradient: Gradient(colors: [.green,.blue]), center: .center, startRadius: 10, endRadius: 500)
+    
+    @State private var animateGradient = false
+    @State private var progress: CGFloat = 0
+    let gradient1 = Gradient(colors: [.black, .black])
+    let gradient2 = Gradient(colors: [.blue, .orange])
+    
     var body: some View {
         ZStack{
-            gradient.opacity(0.6).ignoresSafeArea(.all)
+            Rectangle().animatableGradient(fromGradient: gradient1, toGradient: gradient2, progress: progress)
+                .ignoresSafeArea()
+                .onAppear {
+                    withAnimation(.linear(duration: 1.0)) {
+                        self.progress = 1.0
+                    }
+                }
         }
     }
 }
-
 struct GradientView_Previews: PreviewProvider {
     static var previews: some View {
         GradientView()
