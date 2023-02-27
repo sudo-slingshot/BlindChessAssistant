@@ -33,7 +33,7 @@ struct BeginGameView: View {
         ZStack{
             StaticGradientView()
             VStack(alignment: .center){
-                CircleRobotImage().frame(maxHeight: .infinity, alignment: .top)
+                HorseImage()
                 Text("En attente de connexion... 📡").font(.title).foregroundColor(.primary).frame(maxHeight: .infinity, alignment: .top)
                 Text("Assurez vous que votre plateau d'echecs soit allumé et détectable...").foregroundColor(.secondary).font(.subheadline).frame(maxHeight: .infinity, alignment: .top)
                 

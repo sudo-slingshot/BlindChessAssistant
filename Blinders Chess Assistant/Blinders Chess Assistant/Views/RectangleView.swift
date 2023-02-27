@@ -42,7 +42,7 @@ struct RectangleView: View {
                     //Header display, for robot head & greeting message
                     
                     VStack(alignment: .center){
-                        CircleRobotImage()
+                        HorseImage()
                         Text("Bonjour 👋🏻").font(.title).foregroundColor(.primary)
                         HStack{
                             Text("Je suis votre assistant virtuel pour vous apprendre a jouer aux échecs").foregroundColor(.secondary).font(.subheadline)

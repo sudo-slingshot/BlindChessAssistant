@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Views/MenuView.swift">
-   </FileRef>
-   <FileRef
       location = "group:/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/ViewAssets/AnimatableGradientModifier.swift">
    </FileRef>
    <FileRef

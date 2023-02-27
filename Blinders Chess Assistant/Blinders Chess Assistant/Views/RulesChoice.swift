@@ -37,6 +37,7 @@ struct RulesChoice: View {
             StaticGradientView()
             VStack{
                 VStack{
+                    HorseImage()
                     Text("Règles des échecs 📝").font(.title)
                     
                     NavigationLink(destination: RulesView()){

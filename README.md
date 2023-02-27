@@ -27,3 +27,4 @@ At the moment, BlindChessAssistant only supports french language. We are looking
 |V0.7| Demo version for 30.01.2023 demo |
 |V0.8| First version of speech fragmentation for placing your chess pieces on the board |
 |V0.9|First UI Refactoring|
+|V0.91|Second UI Refactoring|

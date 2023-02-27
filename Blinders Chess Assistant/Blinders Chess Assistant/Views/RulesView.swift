@@ -73,7 +73,7 @@ struct RulesView: View {
                         
                     }
                 }.frame(maxHeight: .infinity, alignment: .bottom).onAppear{
-                    let rulesspeech = "Voulez vous vous enquérir des règles du jeu d'échecs, du placement des pièces sur l'échiquer ou des mouvements autorisés?"
+                    let rulesspeech = "Insérer ici les règles du jeu"
                     TTS(speech: rulesspeech)
                 }.onDisappear{
                     speechSynthesizer.stopSpeaking(at: .immediate)
