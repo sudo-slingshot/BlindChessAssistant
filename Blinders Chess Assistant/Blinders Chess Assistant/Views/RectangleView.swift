@@ -22,16 +22,17 @@ struct RectangleView: View {
     
     
     //String TTS
-    let utterance = AVSpeechUtterance(string: "Bonjour, je suis votre assistant virtuel. Je peux vous apprendre les règles des echecs, ainsi que le placement et le mouvement des pièces du jeu. Appuyez sur le bouton situé en bas de l'écran pour communiquer avec moi")
+    @State private var utterance = "Bonjour, je suis votre assistant virtuel. Pour en savoir plus sur mon utilisation, appuyez sur le bouton situé en bas de l'écran et dites : Présente toi"
     
     
     //Text To Speech Function
-    private func TTS(){
-        utterance.pitchMultiplier = 1.0
-        utterance.rate = 0.5
-        utterance.voice = AVSpeechSynthesisVoice(language: "fr")
+    private func TTS(speech: String){
+        let speech2 = AVSpeechUtterance(string: speech)
+        speech2.pitchMultiplier = 1.0
+        speech2.rate = 0.5
+        speech2.voice = AVSpeechSynthesisVoice(language: "fr")
          
-        speechSynthesizer.speak(utterance)
+        speechSynthesizer.speak(speech2)
     }
     
     var body: some View {
@@ -67,7 +68,7 @@ struct RectangleView: View {
                         NavigationLink("RulesView", destination: RulesView(), isActive: $rules).hidden()
                         
                     }.frame(maxHeight: .infinity, alignment: .top).offset(y:10).onAppear{
-                        TTS()
+                        TTS(speech: utterance)
                     }.onDisappear{
                         speechSynthesizer.stopSpeaking(at: .immediate)
                     }
@@ -85,6 +86,12 @@ struct RectangleView: View {
                             AudioServicesPlaySystemSound(systemSoundID)
                             
                             //processing vocal speech to text treatment for view changes
+                            
+                            if (text.contains("Présent")||text.contains("présent")){
+                                utterance = "Je peux vous apprendre les règles de base des échecs, ainsi que le placement des pièces du jeu, et les mouvements des pièces. Que souhaitez vous faire?"
+                                
+                                TTS(speech: utterance)
+                            }
                             
                             if (text.contains("mouve")||text.contains("Mouve")){
                                 mouvement = true

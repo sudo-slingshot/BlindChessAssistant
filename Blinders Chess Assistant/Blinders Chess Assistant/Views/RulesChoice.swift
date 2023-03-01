@@ -41,7 +41,7 @@ struct RulesChoice: View {
                     Text("Règles des échecs 📝").font(.title)
                     
                     NavigationLink(destination: RulesView()){
-                        RoundedRectangle(cornerRadius: 20).frame(height: 90).foregroundColor(.clear).overlay(Text("Règles du jeu").offset(x: 25).foregroundColor(.primary)).overlay(RulesCircleImage().offset(x: -130))
+                        RoundedRectangle(cornerRadius: 20).frame(height: 90).foregroundColor(.clear).overlay(Text("Principe du jeu").offset(x: 25).foregroundColor(.primary)).overlay(RulesCircleImage().offset(x: -130))
                     }
                     
                     NavigationLink(destination: PlacementView()){
@@ -50,7 +50,7 @@ struct RulesChoice: View {
                     NavigationLink(destination: MouvementView()){
                         RoundedRectangle(cornerRadius: 20).frame(height: 90).foregroundColor(.clear).overlay(Text("Mouvement des pièces").offset(x: 25).foregroundColor(.primary)).overlay(CircleImageMouvement().offset(x: -130))
                     }.onAppear{
-                        let rulesspeech = "Voulez vous vous enquérir des règles du jeu d'échecs, du placement des pièces sur l'échiquer ou des mouvements autorisés?"
+                        let rulesspeech = "Voulez vous vous enquérir du principe du jeu d'échecs, du placement des pièces sur l'échiquer ou des mouvements autorisés?"
                         
                         TTS(speech: rulesspeech)
                     }.onDisappear{

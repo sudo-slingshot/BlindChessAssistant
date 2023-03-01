@@ -20,6 +20,7 @@ struct PlacementView: View {
     @State private var mouvement = false
     @State private var game = false
     @State private var placingstage = 0
+    @State private var placingorder = 0
     
     //Text To Speech Function
     private func TTS(speech: String){
@@ -86,9 +87,14 @@ struct PlacementView: View {
                             if (placingstage == 1){
                                 placingspeech = "Pour commencer, positionnons le plateau d'échecs. Sur certains bords se trouvent un trou et une bosse côte a côte. Positionnez l'un de ces deux bords devant vous."
                             }
+                            //placing white pieces before placing the black ones
+                            if (placingstage == 2 && placingorder==0){
+                                placingspeech = "Commençons par placer les pièces blanches. Placez le roi sur la case située devant la bosse se trouvant sur le bord du plateau"
+                            }
                             
-                            if (placingstage == 2){
-                                placingspeech = "Placez le roi sur la case située devant la bosse se trouvant sur le bord du plateau"
+                            //placing black pieces
+                            if (placingstage == 2 && placingorder==1){
+                                placingspeech = "Plaçons maintenant les pièces noires. Placez le roi sur la case située devant la bosse se trouvant sur le bord du plateau"
                             }
                             
                             if (placingstage == 3){
@@ -109,6 +115,11 @@ struct PlacementView: View {
                             
                             if (placingstage == 7){
                                 placingspeech = "Placez vos pions devant chaque pièce que vous venez de placer jusqu'alors."
+                                
+                                if (placingorder==0){
+                                    placingstage=1
+                                    placingorder=placingorder+1
+                                }
                             }
                             
                             if (placingstage >= 8){
