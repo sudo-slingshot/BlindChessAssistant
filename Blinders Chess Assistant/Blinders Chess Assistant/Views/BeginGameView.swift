@@ -33,7 +33,9 @@ struct BeginGameView: View {
     
     
     var body: some View {
+        //ZStack is here to integrate a gradient background behind the navigation section
         ZStack{
+            //Gradient background
             StaticGradientView()
             VStack(alignment: .center){
                 HorseImage()
@@ -62,19 +64,23 @@ struct BeginGameView: View {
                 VStack{
                     Text(text).font(.system(size: 25, weight: .bold, design: .default))
                     SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{session in
+                        //Load response sound
                         let systemSoundID: SystemSoundID = 1113
+                        //Play audio response
                         AudioServicesPlaySystemSound(systemSoundID)
                     }.onRecognizeLatest(update: $text).onStopRecording{session in
+                        //Load sound response
                         let systemSoundID: SystemSoundID = 1114
+                        //Play sound response
                         AudioServicesPlaySystemSound(systemSoundID)
                         
                         //processing vocal speech to text treatment for view changes
                         
-                        if (text.contains("placement")){
+                        if (text.contains("placement")||text.contains("Placement")){
                             placement = true
                         }
                         
-                        if (text.contains("mouvement")){
+                        if (text.contains("mouvement")||text.contains("Mouvement")){
                             mouvement = true
                         }
                         
@@ -83,6 +89,7 @@ struct BeginGameView: View {
                         }
                     }
                 }.frame(maxHeight: .infinity, alignment: .bottom).onAppear{
+                    //Configuring speech that will be played while going to the view
                     let connectionspeech = "Nous recherchons actuellement votre plateau d'échecs. Assurez vous que votre plateau soit allumé et détectable, et que le bluetooth de votre téléphone soit actif."
                     
                     TTS(speech: connectionspeech)

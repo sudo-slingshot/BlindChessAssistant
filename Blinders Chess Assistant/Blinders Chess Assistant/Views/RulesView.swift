@@ -38,7 +38,7 @@ struct RulesView: View {
             VStack{
                 RulesCircleImageBig().frame(maxHeight: .infinity, alignment: .top)
                 VStack{
-                    Text("Règles du jeu").font(.title).foregroundColor(.primary).frame(maxHeight: .infinity, alignment: .bottom)
+                    Text("Principe du jeu").font(.title).foregroundColor(.primary).frame(maxHeight: .infinity, alignment: .bottom)
                     
                     //Onboarding vocal triggers
                     NavigationLink("MouvementView", destination: MouvementView(), isActive: $mouvement).hidden()

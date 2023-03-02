@@ -5,6 +5,9 @@
 ![Swift](https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white)
 ![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white)
 
+## Authors
+This project has been developped in Swift by [sudo-slinghsot](https://github.com/sudo-slingshot), [JC-T](https://github.com/JC-T) & [julien-albert](https://github.com/julien-albert). The code produced is not perfect, as it is for us an introductionary project to learn this language
+
 ## What's BlindChess assistant ?
 Blindchess assistant is an application under development, allowing people with a visual disability to learn chess, the rules, and the pieces movement, with the help of a vocal assistant.
 
@@ -13,7 +16,7 @@ Blindchess assistant is an application under development, allowing people with a
 BlindChessAssistant relies on the SwiftSpeech package to onboard vocal interaction with your phone.
 
 ## Language support
-At the moment, BlindChessAssistant only supports french language. We are looking forward on working on an english version realy soon
+At the moment, BlindChessAssistant only supports french language. We are looking forward on working on an english version.
 
 ## Devlog
 
@@ -31,3 +34,4 @@ At the moment, BlindChessAssistant only supports french language. We are looking
 |V0.91|Second UI Refactoring|
 |V0.92|UX Upgrade + Small UI changes|
 |V1.0|Final refactoring + push for a (hopefully) stable version|
+|V1.1|Documentation + refactoring|

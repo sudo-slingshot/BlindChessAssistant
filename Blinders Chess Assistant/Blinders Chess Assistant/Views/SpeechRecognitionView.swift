@@ -1,6 +1,6 @@
 //
 //  SpeechRecognitionView.swift
-//  
+//  TEST VIEW FOR UPCOMING IMPLEMENTATION
 //
 //  Created by Yohann Le Clech on 22/01/2023.
 //
@@ -10,6 +10,7 @@ import SwiftSpeech
 import AVFoundation
 
 struct SpeechRecognitionView: View {
+    //Auto update text while audio recongition is active
     @State private var text = "Push To Speak"
     var body: some View {
         VStack(spacing: 35.0){

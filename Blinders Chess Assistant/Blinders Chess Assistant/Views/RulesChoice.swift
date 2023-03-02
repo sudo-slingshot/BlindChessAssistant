@@ -33,7 +33,9 @@ struct RulesChoice: View {
     
     
     var body: some View {
+        //ZStack is here to integrate a gradient background behind the navigation view
         ZStack{
+            //Gradient background
             StaticGradientView()
             VStack{
                 VStack{
@@ -57,7 +59,8 @@ struct RulesChoice: View {
                         speechSynthesizer.stopSpeaking(at: .immediate)
                     }
                     
-                    //Onboarding vocal triggers
+                    //Vocal triggers for speech recognition
+                    
                     NavigationLink("MouvementView", destination: MouvementView(), isActive: $mouvement).hidden()
                     
                     NavigationLink("PlacementView", destination: PlacementView(), isActive: $placement).hidden()
@@ -68,6 +71,7 @@ struct RulesChoice: View {
                     
                 }
                 
+                //Speech recognition button
                 VStack{
                     Text(text).font(.system(size: 25, weight: .bold, design: .default))
                     SwiftSpeech.RecordButton().swiftSpeechRecordOnHold().onStartRecording{session in
@@ -95,7 +99,7 @@ struct RulesChoice: View {
                             rules = true
                         }
                         
-                    }
+                    }//aligning button to the bottom of the screen
                 }.frame(maxHeight: .infinity, alignment: .bottom)
             }
         }
