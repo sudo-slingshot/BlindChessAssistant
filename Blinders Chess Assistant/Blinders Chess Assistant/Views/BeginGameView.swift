@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftSpeech
 import AVFoundation
+import CoreBluetooth
 
 struct BeginGameView: View {
     let speechSynthesizer = AVSpeechSynthesizer()
@@ -16,6 +17,8 @@ struct BeginGameView: View {
     @State private var placement = false
     @State private var mouvement = false
     @State private var choice = false
+    @State private var connected = false
+    
     
     //Text To Speech Function
     private func TTS(speech: String){
@@ -34,8 +37,9 @@ struct BeginGameView: View {
             StaticGradientView()
             VStack(alignment: .center){
                 HorseImage()
-                Text("En attente de connexion... 📡").font(.title).foregroundColor(.primary).frame(maxHeight: .infinity, alignment: .top)
-                Text("Assurez vous que votre plateau d'echecs soit allumé et détectable...").foregroundColor(.secondary).font(.subheadline).frame(maxHeight: .infinity, alignment: .top)
+                Text("En attente de connexion... 📡").font(.title).foregroundColor(.primary).frame(maxHeight: .infinity, alignment: .top).onTapGesture {
+                    connected = true
+                }
                 
                 //========================================
                 
@@ -47,6 +51,8 @@ struct BeginGameView: View {
                 NavigationLink("Placement", destination: PlacementView(), isActive: $placement).hidden()
                 
                 NavigationLink("RulesChoice", destination: RulesChoice(), isActive: $choice).hidden()
+                
+                NavigationLink("Connected", destination: ConnectedView(), isActive: $connected).hidden()
                 
                 
                 //========================================
@@ -80,6 +86,7 @@ struct BeginGameView: View {
                     let connectionspeech = "Nous recherchons actuellement votre plateau d'échecs. Assurez vous que votre plateau soit allumé et détectable, et que le bluetooth de votre téléphone soit actif."
                     
                     TTS(speech: connectionspeech)
+                    
                 }.onDisappear{
                     speechSynthesizer.stopSpeaking(at: .immediate)
                 }

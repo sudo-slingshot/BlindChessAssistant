@@ -85,36 +85,36 @@ struct PlacementView: View {
                         if (text.contains("continu") || text.contains("Continu")){
                             placingstage = placingstage + 1
                             if (placingstage == 1){
-                                placingspeech = "Pour commencer, positionnons le plateau d'échecs. Sur certains bords se trouvent un trou et une bosse côte a côte. Positionnez l'un de ces deux bords devant vous."
+                                placingspeech = "Pour commencer, positionnons le plateau d'échecs. Sur le coin inférieur gauche du plateau d'échecs se trouve un petit trou. Trouvez ce coin et positionnez le devant vous, sur votre gauche"
                             }
                             //placing white pieces before placing the black ones
                             if (placingstage == 2 && placingorder==0){
-                                placingspeech = "Commençons par placer les pièces blanches. Placez le roi sur la case située devant la bosse se trouvant sur le bord du plateau"
+                                placingspeech = "Commençons par placer les pièces blanches. Placez vos 8 pions en ligne droite le long de la deuxième rangée."
                             }
                             
                             //placing black pieces
                             if (placingstage == 2 && placingorder==1){
-                                placingspeech = "Plaçons maintenant les pièces noires. Placez le roi sur la case située devant la bosse se trouvant sur le bord du plateau"
+                                placingspeech = "Plaçons maintenant les pièces noires. Placez vos pions sur la deuxième rangée."
                             }
                             
                             if (placingstage == 3){
-                                placingspeech = "Placez la reine sur la case située devant le trou se trouvant sur le bord du plateau"
+                                placingspeech = "Placez vos tours dans les coins de l'échiquier"
                             }
                             
                             if (placingstage == 4){
-                                placingspeech="Placez vos fous sur les cases a côté du roi et de la reine."
+                                placingspeech=" Placez vos cavaliers a côté de vos tours"
                             }
                             
                             if (placingstage == 5){
-                                placingspeech="Placez vos cavaliers sur les cases libres a côté de vos fous"
+                                placingspeech="Placez vos fous a côté de vos cavaliers"
                             }
                             
                             if (placingstage==6){
-                                placingspeech="Placez vos tours sur les cases libres a côté de vos cavaliers. Si votre placement est correct, les tours se trouvent sur les cases en bord de plateau"
+                                placingspeech="Placez votre reine sur la case situé devant le petit trou présent sur le bord de l'échiquier"
                             }
                             
                             if (placingstage == 7){
-                                placingspeech = "Placez vos pions devant chaque pièce que vous venez de placer jusqu'alors."
+                                placingspeech = "Placez votre roi sur la case vide restante"
                                 
                                 if (placingorder==0){
                                     placingstage=1

@@ -2,21 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/ViewAssets/AnimatableGradientModifier.swift">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Views/RulesView.swift">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Funcs.swift">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Views/BeginGameView.swift">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/yleclech/Documents/TestApp/Blinders Chess Assistant/Blinders Chess Assistant/Blinders Chess Assistant/Views/SpeechRecognitionView.swift">
-   </FileRef>
-   <FileRef
       location = "group:Blinders Chess Assistant.xcodeproj">
    </FileRef>
    <FileRef
