@@ -22,7 +22,7 @@ struct RectangleView: View {
     
     
     //String TTS
-    @State private var utterance = "Bonjour, je suis votre assistant virtuel. Pour en savoir plus sur mon utilisation, appuyez sur le bouton situé en bas de l'écran et dites : Présente toi"
+    @State private var utterance = ""
     
     
     //Text To Speech Function
@@ -67,9 +67,7 @@ struct RectangleView: View {
                         
                         NavigationLink("RulesView", destination: RulesView(), isActive: $rules).hidden()
                         
-                    }.frame(maxHeight: .infinity, alignment: .top).offset(y:10).onAppear{
-                        TTS(speech: utterance)
-                    }.onDisappear{
+                    }.frame(maxHeight: .infinity, alignment: .top).offset(y:10).onDisappear{
                         speechSynthesizer.stopSpeaking(at: .immediate)
                     }
                     
@@ -115,6 +113,8 @@ struct RectangleView: View {
                     
                 }.frame(maxHeight: .infinity, alignment: .bottom).onAppear{
                     SwiftSpeech.requestSpeechRecognitionAuthorization()
+                    utterance = "Bonjour, je suis votre assistant virtuel. Pour en savoir plus sur mon utilisation, appuyez sur le bouton situé en bas de l'écran et dites : Présente toi"
+                    TTS(speech: utterance)
                 }
             }
         }

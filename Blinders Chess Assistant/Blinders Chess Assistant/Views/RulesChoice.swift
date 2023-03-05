@@ -61,13 +61,13 @@ struct RulesChoice: View {
                     
                     //Vocal triggers for speech recognition
                     
-                    NavigationLink("MouvementView", destination: MouvementView(), isActive: $mouvement).hidden()
+                    NavigationLink("MouvementView", destination: MouvementView(), isActive: $mouvement).hidden().frame(height:0)
                     
-                    NavigationLink("PlacementView", destination: PlacementView(), isActive: $placement).hidden()
+                    NavigationLink("PlacementView", destination: PlacementView(), isActive: $placement).hidden().frame(height:0)
                     
-                    NavigationLink("GameView", destination: BeginGameView(), isActive: $game).hidden()
+                    NavigationLink("GameView", destination: BeginGameView(), isActive: $game).hidden().frame(height:0)
                     
-                    NavigationLink("RulesView", destination: RulesView(), isActive: $rules).hidden()
+                    NavigationLink("RulesView", destination: RulesView(), isActive: $rules).hidden().frame(height:0)
                     
                 }
                 

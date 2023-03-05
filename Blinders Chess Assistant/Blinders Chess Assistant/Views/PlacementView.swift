@@ -38,13 +38,13 @@ struct PlacementView: View {
         ZStack{
             StaticGradientView()
             VStack{
-                
-                CirclePlacementImageBig().frame(maxHeight: .infinity, alignment: .top)
+                CirclePlacementImageBig().frame(maxHeight: .infinity, alignment: .top).frame(height: 180)
+                Text("Placement des pièces").font(.title).foregroundColor(.primary).frame(maxHeight: .infinity, alignment: .top)
                 VStack(alignment: .leading){
-                    Text("Placement des pièces").font(.title).foregroundColor(.primary).frame(maxHeight: .infinity, alignment: .top).offset(y: 30)
+                    
                 }.onAppear{
                     TTS(speech: utterance)
-                }.offset(y: -150).onDisappear{
+                }.onDisappear{
                     speechSynthesizer.stopSpeaking(at: .immediate)
                 }
                 

@@ -37,8 +37,8 @@ struct RulesView: View {
             StaticGradientView()
             VStack{
                 RulesCircleImageBig().frame(maxHeight: .infinity, alignment: .top)
+                Text("Principe du jeu").font(.title).foregroundColor(.primary).frame(maxHeight: .infinity, alignment: .top)
                 VStack{
-                    Text("Principe du jeu").font(.title).foregroundColor(.primary).frame(maxHeight: .infinity, alignment: .bottom)
                     
                     //Onboarding vocal triggers
                     NavigationLink("MouvementView", destination: MouvementView(), isActive: $mouvement).hidden()
