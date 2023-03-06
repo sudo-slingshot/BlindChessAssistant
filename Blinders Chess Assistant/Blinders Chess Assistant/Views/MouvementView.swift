@@ -73,33 +73,33 @@ struct MouvementView: View {
                         
                         //gestion du mouvement des pièces
                         if text.contains("Pion") || text.contains ("pion"){
-                            let pionspeech = "Le pion se déplace droit devant lui, d'une seule case à chaque coup et sans jamais pouvoir reculer. Lors de son premier déplacement (alors qu'il est sur sa case initiale), un pion peut avancer, au choix, d'une ou de deux cases en un seul coup. Dans les deux cas, la case d'arrivée doit être libre de toute pièce amie ou ennemie ; si le pion se déplace de deux cases, aucune pièce ne doit être sur son chemin."
+                            let pionspeech = "Le Pion avance tout droit si la case devant lui est vide. Chaque pion peut se déplacer d'une ou deux cases lors de son premier coup, puis avance d'une seule case par la suite. l capture les pièces adverses en diagonale, mais ne peut pas capturer le roi adverse. Le pion est également la seule pièce qui ne peut pas reculer."
                             TTS(speech: pionspeech)
                         }
                         
                         if text.contains("Tour")||text.contains("tour"){
-                            let tourspeech="La Tour se déplace horizontalement ou verticalement, d’autant de cases qu’elle veut. La Tour ne peut pas aller sur une case occupée par une pièce de son camp, ni sauter au-dessus d’une autre pièce."
+                            let tourspeech="La Tour se déplace en ligne droite horizontalement ou verticalement et capture les pièces adverses qui se trouvent sur sa trajectoire et s’y positionne."
                             TTS(speech: tourspeech)
                         }
                         
                         
                         if text.contains("Reine")||text.contains("reine")||text.contains("Dame")||text.contains("dame"){
-                            let reinespeech="La Dame se déplace comme la Tour et le Fou: elle peut donc se déplacer verticalement, horizontalement et en diagonale, d’autant de cases qu’elle veut (sans bien sûr pouvoir passer au-dessus d’une autre pièce ou pouvoir prendre une pièce de son propre camp). Comme c’est la pièce la plus mobile, c’est aussi la pièce qui a la plus grande valeur."
+                            let reinespeech="La Dame est la pièce la plus puissante du jeu. Elle peut se déplacer dans toutes les directions sur le plateau d'échecs et capture les pièces adverses qui se trouvent sur sa trajectoire et s’y positionne."
                             TTS(speech: reinespeech)
                         }
                         
                         if text.contains("roi")||text.contains("Roi"){
-                            let roispeech="Le Roi se déplace d’une seule case, dans toutes les directions. Lorsqu’un Roi est attaqué par une pièce adverse, on dit qu’il est en échec. Un joueur n’a pas le droit de laisser son Roi en échec. Il n’a pas non plus le droit de déplacer son Roi sur une case où celui-ci sera attaqué (donc en échec)."
+                            let roispeech=" Le Roi se déplace d'une seule case dans toutes les directions et capture les pièces adverses qui se trouvent sur sa trajectoire et s’y positionne. Le roi n'a pas le droit de se mettre en position d'échec, c'est-à-dire dans une situation où il peut être capturé au tour suivant par une pièce adverse."
                             TTS(speech: roispeech)
                         }
                         
                         if text.contains("Fou")||text.contains("fou"){
-                            let fouspeech="Le Fou se déplace en diagonale, d’autant de cases qu’il veut."
+                            let fouspeech="Le Fou se déplace sur sa diagonale d'autant de cases qu'il le souhaite et capture les pièces adverses qui se trouvent sur sa trajectoire et s’y positionne."
                             TTS(speech: fouspeech)
                         }
                         
                         if text.contains("Cavalier")||text.contains("cavalier")||text.contains("cheval")||text.contains("Cheval"){
-                            let chevalspeech="le Cavalier se déplace de deux cases horizontalement ou verticalement, puis fait un pas sur le côté. Il effectue donc une sorte de « L » majuscule, tourné dans n’importe quel sens. Le Cavalier est la seule pièce qui peut sauter au-dessus des autres pièces (les siennes et celles de l’adversaire)"
+                            let chevalspeech="Le Cavalier est la seule pièce qui peut sauter par-dessus une autre pièce. Il se déplace en formant un L, c'est-à-dire deux cases dans une direction puis une case sur le côté. Si sa case d’arrivée est occupée par une pièce adverse, il la capture et s'y positionne."
                             TTS(speech: chevalspeech)
                         }
                     }.onAppear{TTS(speech: utterance)}.onDisappear{

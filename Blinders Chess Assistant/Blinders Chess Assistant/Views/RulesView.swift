@@ -87,16 +87,11 @@ struct RulesView: View {
                             }
                             
                             if (principlesstage==3){
-                                utterance = "L’objectif de chaque joueur est de placer le roi adverse « sous une attaque » de telle manière que l’adversaire n’ait aucun coup légal pour contrer cette attaque."
+                                utterance = "Le but du jeu d'échecs est de mettre le roi adverse en échec et mat. L'expression échec et mat signifie que le roi est menacé de capture et qu'il n'y a aucun moyen de le sauver, ce qui signifie la fin de la partie."
                                 TTS(speech: utterance)
                             }
                             
-                            if (principlesstage==4){
-                                utterance = "Chaque joueur a donc pour but d'infliger à son adversaire un échec et mat, une situation dans laquelle le roi d'un joueur est attaqué sans qu'il soit possible d'y remédier."
-                                TTS(speech: utterance)
-                            }
-                            
-                            if (principlesstage >= 5){
+                            if (principlesstage >= 4){
                                 utterance = "Nous avons terminé d'énoncer les principes du jeu d'échec. Si vous souhaitez les réentendre, appuyez sur le bouton et dites : recommencer."
                                 TTS(speech: utterance)
                             }
