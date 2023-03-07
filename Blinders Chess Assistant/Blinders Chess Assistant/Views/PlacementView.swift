@@ -59,6 +59,7 @@ struct PlacementView: View {
                 
                 NavigationLink("GameView", destination: BeginGameView(), isActive: $game).hidden()
                 
+                NavigationLink("RulesView", destination: RulesView(), isActive: $rules).hidden()
                 
                 
                 
@@ -82,6 +83,11 @@ struct PlacementView: View {
                         //processing vocal speech to text treatment for view changes
                         
                         //processing request to move on in the chess pieces placing process
+                        
+                        if text.contains("Règles") || text.contains("règles")||text.contains("principe")||text.contains("Principe"){
+                            rules = true
+                        }
+                        
                         if (text.contains("continu") || text.contains("Continu")){
                             placingstage = placingstage + 1
                             if (placingstage == 1){

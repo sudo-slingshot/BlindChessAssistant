@@ -102,7 +102,7 @@ struct RectangleView: View {
                                 game = true
                             }
                             
-                            if text.contains("Règles") || text.contains("règles"){
+                            if text.contains("Règles") || text.contains("règles")||text.contains("principe")||text.contains("Principe"){
                                 rules = true
                             }
                             

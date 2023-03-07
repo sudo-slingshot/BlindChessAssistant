@@ -37,3 +37,4 @@ At the moment, BlindChessAssistant only supports french language. We are looking
 |V1.1|Documentation + refactoring|
 |V1.11|UI readaptation for smaller phones|
 |V1.12|Pieces placement refactoring|
+|V1.13|Final refactoring for final demo|

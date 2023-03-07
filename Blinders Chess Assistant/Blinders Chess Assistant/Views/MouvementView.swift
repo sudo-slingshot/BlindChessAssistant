@@ -44,6 +44,8 @@ struct MouvementView: View {
                 
                 NavigationLink("GameView", destination: BeginGameView(), isActive: $game).hidden()
                 
+                NavigationLink("RulesView", destination: RulesView(), isActive: $rules).hidden()
+                
                 
                 
                 //=======================================
@@ -62,6 +64,10 @@ struct MouvementView: View {
                         AudioServicesPlaySystemSound(systemSoundID)
                         
                         //processing vocal speech to text treatment for view changes
+                        
+                        if text.contains("Règles") || text.contains("règles")||text.contains("principe")||text.contains("Principe"){
+                            rules = true
+                        }
                         
                         if (text.contains("place")){
                             placement = true

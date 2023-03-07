@@ -84,8 +84,8 @@ struct BeginGameView: View {
                             mouvement = true
                         }
                         
-                        if text.contains("Règles")||text.contains("règles"){
-                            choice = true
+                        if text.contains("Règles") || text.contains("règles")||text.contains("principe")||text.contains("Principe"){
+                            rules = true
                         }
                     }
                 }.frame(maxHeight: .infinity, alignment: .bottom).onAppear{
